@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Вадим Фролов](https://up.htmlacademy.ru/adaptive/21/user/1550189).
-* Наставник: `Неизвестно`.
+- Студент: [Вадим Фролов](https://up.htmlacademy.ru/adaptive/21/user/1550189).
+- Наставник: [Александр Карташов](https://htmlacademy.ru/profile/id77080).
 
 ---
 
