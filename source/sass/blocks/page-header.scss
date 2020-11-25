@@ -1,0 +1,10 @@
+.page-header {
+  display: flex;
+  flex-direction: row;
+  background-color: $white;
+  color: $black;
+}
+
+.page-header__logo-img {
+  text-align: left;
+}
