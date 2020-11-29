@@ -1,0 +1,111 @@
+.additional-products {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.additional-products__title {
+  position: relative;
+  color: $black;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  margin: 25px 0 36px 0;
+  padding: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 248px;
+    background-image: url("../../img/aditional-line.svg");
+    width: 53px;
+    height: 2px;
+  }
+}
+
+
+.additional-products__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.additional-products__item {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid $grey-catalog-border;
+  border-bottom: 1px solid $grey-catalog-border;
+}
+
+.goods__title {
+  color: $black-light;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  margin: 13px 0;
+  padding: 0;
+}
+
+.goods p {
+  color: $special-grey;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+.goods__description-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.goods__link {
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  background-color: #68b738;
+  padding: 8px 110px;
+  margin-bottom: 18px;
+}
+
+.action__description {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+  padding-top: 185px;
+}
+
+.action {
+  position: relative;
+  background-blend-mode: multiply;
+  background-image: url("../../img/action-cat.png");
+  background-repeat: no-repeat;
+  min-height: 289px;
+  margin: 0 0 35px 0;
+
+  &::after {
+    content: "";
+    top: 57px;
+    left: 101px;
+    position: absolute;
+    background-image: url("../../img/gift.svg");
+    width: 78px;
+    height: 80px;
+  }
+}

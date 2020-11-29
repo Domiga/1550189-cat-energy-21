@@ -1,0 +1,73 @@
+.content-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.content-form__information {
+  margin: 0;
+  padding: 0;
+  border: 1px solid tomato;
+}
+
+.cat-information__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cat-information__title {
+  text-align: left;
+  color: $black;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.cat-information__indication {
+  color: $special-grey;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.cat-information__indication input::placeholder {
+  color: $special-grey;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.cat-information__indication input {
+  margin-left: 14px;
+  outline: 0;
+  background-color: $white;
+  border: 1px solid $grey-border-light;
+}
+
+.cat-information__entry--name {
+  padding: 13px 51px 15px 14px;
+}
+
+.cat-information__entry--weight {
+  padding: 13px 29px 15px 13px;
+}
+
+.cat-information__entry--age {
+  padding: 14px 0 14px 9px;
+}
+
+.cat-information__item {
+  margin-bottom: 24px;
+}
+
+.cat-information__item:not(:last-child) {
+  margin-bottom: 14px;
+}
