@@ -1,14 +1,18 @@
 .invitation {
   display: flex;
   flex-direction: row;
+  background-color: $white;
   padding: 28px 20px 22px 20px;
+}
+
+.invitation--grey {
+  background-color: $grey;
 }
 
 .invitation-catalog {
   display: flex;
   flex-direction: row;
   padding: 42px 20px 8px 20px;
-  background-color: $grey;
 }
 
 
