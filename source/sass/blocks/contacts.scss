@@ -1,0 +1,19 @@
+.contacts__link {
+  padding: 39px 76px 31px 76px;
+  border-bottom: 1px solid $grey-border-bottom;
+}
+
+.contacts__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 20px 53px;
+  border-bottom: 1px solid $grey-border-bottom;
+}
+
+.contacts__copyright {
+  padding: 31px 0;
+}

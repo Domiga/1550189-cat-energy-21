@@ -1,0 +1,24 @@
+.choice-selection__indication {
+  color: $black-light;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.choice-selection__list {
+  list-style: none;
+  margin: 22px 0 18px 0;
+}
+
+.choice-selection__item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.choice-selection {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid $grey-border-bottom;
+  border-bottom: 1px solid $grey-border-bottom;
+}

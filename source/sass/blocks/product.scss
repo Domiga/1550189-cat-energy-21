@@ -1,0 +1,125 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product__link-img--max-padding {
+  text-decoration: none;
+  padding-left: 36px;
+  margin-top: auto;
+}
+
+.product__link-img--min-padding {
+  text-decoration: none;
+  padding-left: 28px;
+  margin-top: auto;
+}
+
+.product__title-link {
+  color: $black;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+.product__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: $special-grey;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+}
+
+.product__content-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px;
+  margin: 20px 0 0 0;
+}
+
+.product__discription-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.product__link {
+  text-decoration: none;
+  text-align: center;
+  color: $white;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  background-color: #68b738;
+  padding: 10px 109px;
+  margin-top: 24px;
+}
+
+.product__description {
+  margin: 0 0 0 32px;
+}
+
+.product--more-prodact {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 148px;
+    background-image: url("../../img/plus.svg");
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.product__more-title {
+  position: relative;
+  color: $black-dark;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 78px 0 0 0;
+}
+
+.product__more-text {
+  color: $special-grey;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  margin: 8px 0 0 0;
+}
+
+.product__more-prodact {
+  text-decoration: none;
+  text-align: center;
+  color: $special-grey;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  background-color: $grey;
+  padding: 20px 94px;
+  margin: 21px 0 25px 0;
+}

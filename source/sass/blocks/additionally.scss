@@ -1,0 +1,56 @@
+.additionally {
+  display: flex;
+  flex-direction: column;
+  margin: 23px 0 0 0;
+}
+
+.additionally__list {
+  display: flex;
+  flex-direction: column;
+  margin: 34px 0 0 0;
+}
+
+.additionally__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.additionally__title {
+  color: $black;
+  font-size: 24px;
+  line-height: 26px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.additionally__indication {
+  color: $black;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.additionally__button {
+  margin: 34px 0 21px 0;
+  padding: 7px 44px;
+  color: $white;
+  background-color: $green;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: none;
+}
+
+.additionally__legend {
+  text-align: center;
+  color: $black;
+  font-size: 14px;
+  line-height: 1px;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  margin: 0 0 32px 0;
+}
