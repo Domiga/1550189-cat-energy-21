@@ -1,0 +1,81 @@
+.how-it-works {
+  display: flex;
+  flex-direction: column;
+  margin: 27px 0 0 0;
+  padding: 0 20px 42px 20px;
+  text-align: left;
+}
+
+.how-it-works__list {
+  list-style: none;
+  padding-left: 80px;
+  margin: 0;
+}
+
+.how-it-works__item {
+  position: relative;
+}
+
+.how-it-works__item:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+
+.how-it-works__title {
+  color: $black;
+  background-color: $white;
+  font-size: 36px;
+  line-height: 40px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  margin: 0 0 36px 0;
+}
+
+.how-it-works__text {
+  color: $special-grey;
+  background-color: $white;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+.how-it-works__item--leaf::before {
+  content: "";
+  top: 0;
+  left: -82px;
+  position: absolute;
+  background-image: url("../../img/how-it-works-list.svg");
+  width: 60px;
+  height: 60px;
+}
+
+.how-it-works__item--powder::before {
+  content: "";
+  top: 0;
+  left: -82px;
+  position: absolute;
+  background-image: url("../../img/how-it-works-powder.svg");
+  width: 60px;
+  height: 60px;
+}
+
+.how-it-works__item--utensils::before {
+  content: "";
+  top: 0;
+  left: -82px;
+  position: absolute;
+  background-image: url("../../img/how-it-works-fork.svg");
+  width: 60px;
+  height: 60px;
+}
+
+.how-it-works__item--clock::before {
+  content: "";
+  top: 0;
+  left: -82px;
+  position: absolute;
+  background-image: url("../../img/how-it-works-clock.svg");
+  width: 60px;
+  height: 60px;
+}

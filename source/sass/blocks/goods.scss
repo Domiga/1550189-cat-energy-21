@@ -1,0 +1,40 @@
+.goods__title {
+  color: $black-light;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  margin: 13px 0;
+  padding: 0;
+}
+
+.goods p {
+  color: $special-grey;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+.goods__description-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.goods__link {
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  background-color: $green;
+  padding: 8px 110px;
+  margin-bottom: 18px;
+}

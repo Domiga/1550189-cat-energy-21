@@ -1,0 +1,62 @@
+.contacts-form {
+  margin: 26px 0 0 0;
+}
+
+.contacts-form__items {
+  display: flex;
+  flex-direction: column;
+  margin: 36px 0 24px 0;
+  padding: 0;
+}
+
+.contacts-form__title {
+  color: $black-light;
+  font-size: 24px;
+  line-height: 26px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+.contacts-form__indication {
+  color: $special-grey;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.contacts-form__entry {
+  color: $special-grey;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  outline: 0;
+  border: 1px solid $grey-border-light;
+}
+
+.contacts-form__entry::placeholder {
+  color: $special-grey;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.contacts-form__entry--email {
+  margin-left: 4px;
+  padding: 12px 50px 13px 15px;
+  width: 153px;
+}
+
+.contacts-form__entry--phone {
+  margin-left: 3px;
+  padding: 12px 67px 13px 15px;
+  width: 120px;
+}
+
+.contacts-form__item:not(:last-child) {
+  margin-bottom: 13px;
+}

@@ -1,0 +1,14 @@
+.catalog {
+  background-color: $white;
+}
+
+.catalog__item {
+  padding: 19px 20px 24px 20px;
+  margin: 0;
+  border-top: 1px solid $grey-catalog-border;
+  border-bottom: 1px solid $grey-catalog-border;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
