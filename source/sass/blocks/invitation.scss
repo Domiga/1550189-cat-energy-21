@@ -3,6 +3,16 @@
   flex-direction: row;
   background-color: $white;
   padding: 28px 20px 22px 20px;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 28px 30px 22px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    padding: 28px 110px 22px 110px;
+  }
 }
 
 .invitation--grey {

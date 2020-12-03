@@ -21,7 +21,7 @@
                             главная
                         </a>
                     </li>
-                    <li class="site-list__item site-list">
+                    <li class="site-list__item ">
                         <a class="main-navigation__link" href="catalog.html">
                             каталог продукции
                         </a>
@@ -37,6 +37,7 @@
         <main class="page-form">
             <h1 class="page-form__title">Подбор программы</h1>
             <form class="page-form__content content-form" action="#" method="post">
+              <div class="form-wrapper">
                 <fieldset class="content-form__information cat-information">
                     <legend class="cat-information__title">
                         Заполните анкету, и мы подберем<br />
@@ -90,6 +91,7 @@
                         </li>
                     </ul>
                 </fieldset>
+              </div>
 
                 <fieldset class="content-form__information contacts-form">
                     <legend class="contacts-form__title">
@@ -121,6 +123,7 @@
 
                 <fieldset class="content-form__information additionally">
                     <legend class="additionally__title">Дополнительно</legend>
+                    <div class="additionally__wrapper-content">
                     <ul class="additionally__list">
                         <li class="additionally__item">
                             <label class="additionally__indication">
@@ -151,10 +154,13 @@
                             </label>
                         </li>
                     </ul>
+                    <div class="additionally__wrapper-foter">
                     <button class="additionally__button" type="submit">Отправить заявку</button>
                     <p class="additionally__legend">
                         * &mdash; Обязательные поля
                     </p>
+                    </div>
+                    </div>
                 </fieldset>
             </form>
         </main>

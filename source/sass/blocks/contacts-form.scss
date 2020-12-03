@@ -1,5 +1,14 @@
 .contacts-form {
   margin: 26px 0 0 0;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .contacts-form__items {
@@ -7,6 +16,11 @@
   flex-direction: column;
   margin: 36px 0 24px 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .contacts-form__title {

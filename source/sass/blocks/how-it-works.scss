@@ -1,15 +1,37 @@
 .how-it-works {
   display: flex;
   flex-direction: column;
-  margin: 27px 0 0 0;
-  padding: 0 20px 42px 20px;
+  margin: 27px 0 42px 0;
+  padding: 0 20px;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .how-it-works__list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   padding-left: 80px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .how-it-works__item {
