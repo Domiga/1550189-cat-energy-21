@@ -1,20 +1,26 @@
 .functional-eat {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  padding: 0;
+  height: 480px;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
     background-image: none;
-    padding: 0 30px;
+    padding: 0;
+    min-height: 810px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    width: 1220px;
+    margin: auto;
+    min-height: 694px;
   }
 }
 
 .functional-eat__wrapper {
+  display: flex;
+  flex-direction: column;
   position: relative;
   background-blend-mode: multiply;
   background-image: url("../../img/functional-eat-cat.jpg");
@@ -37,11 +43,59 @@
   @media (min-width: $tablet-width) {
     background-color: $white;
     background-image: none;
+    padding: 0 30px;
+    min-height: 181px;
+    margin-bottom: 49px;
+
+    &::after {
+      content: "";
+      top: 200px;
+      left: 30px;
+      position: absolute;
+      background-image: url("../../img/functional-eat-tablet.png");
+      background-repeat: no-repeat;
+      width: 709px;
+      height: 609px;
+      z-index: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+
+    &::after {
+      content: "";
+      top: -84px;
+      left: 384px;
+      position: absolute;
+      background-image: url("../../img/functional-eat-tablet.png");
+      background-repeat: no-repeat;
+      width: 709px;
+      height: 609px;
+      z-index: 0;
+    }
+  }
+}
+
+.functional-eat__button-wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 0 112px;
+    z-index: 1;
+    text-align: start;
+    margin-top: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 80px;
+    margin: 52px 0 0 0;
   }
 }
 
 .functional-eat__title {
   color: $white;
+  text-align: center;
   font-size: 36px;
   line-height: 36px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -56,6 +110,8 @@
     line-height: 60px;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
+    z-index: 1;
+    padding: 0 0 0 87px;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,6 +121,8 @@
     line-height: 60px;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
+    max-width: 1200px;
+    padding-left: 80px;
   }
 }
 
@@ -76,12 +134,35 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 25px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    color: $black;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    margin: 41px 0 0 0;
+    z-index: 1;
+    padding: 0 0 0 86px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    color: $black;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    margin: 40px 0 0 0;
+    padding: 0 0 0 80px;
+  }
 }
 
 .functional-eat__link {
   text-decoration: none;
   text-align: center;
-  color: #ffffff;
+  color: $white;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -89,4 +170,26 @@
   font-weight: 400;
   background-color: #68b738;
   padding: 10px 73px;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    color: $white;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    margin: 41px 0 0 0;
+    z-index: 1;
+    padding: 12px 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    color: $white;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    margin: 41px 0 0 0;
+  }
 }

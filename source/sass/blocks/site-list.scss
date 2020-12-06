@@ -15,11 +15,23 @@
   border-bottom: 1px solid $special-grey-border-nav;
 
   @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
     border-bottom: none;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    color: $white;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-bottom: none;
     padding: 0;
   }
 }
@@ -45,7 +57,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 440px;
-    padding-top: 37px;
+    padding-top: 42px;
   }
 
   @media (min-width: $desktop-width) {

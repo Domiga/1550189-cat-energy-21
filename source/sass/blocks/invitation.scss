@@ -2,16 +2,27 @@
   display: flex;
   flex-direction: row;
   background-color: $white;
-  padding: 28px 20px 22px 20px;
+  padding: 0 20px;
+  margin: 28px 0 22px 0;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding: 28px 30px 22px 30px;
+    padding: 62px 71px 51px 71px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     position: absolute;
-    padding: 28px 110px 22px 110px;
+    left: 110px;
+    top: 95px;
+    margin: 0 auto;
+    min-width: 570px;
+    min-height: 201px;
+    padding: 0;
   }
 }
 
@@ -27,7 +38,17 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 0 22px 0 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .invitation__address {
@@ -38,4 +59,15 @@
   font-family: "Arial", sans-serif;
   font-weight: 400;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
