@@ -9,7 +9,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    padding: 0;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -17,11 +19,14 @@
   display: flex;
   flex-direction: column;
   margin: 34px 0 0 0;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
+    margin: 57px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,8 +36,18 @@
   }
 }
 
-.additionally__item:not(:last-child) {
+.additionally__item {
   margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 44%;
+    margin: 0 0 56px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 221px;
+    margin: 0 0 61px 0;
+  }
 }
 
 .additionally__title {
@@ -41,7 +56,16 @@
   line-height: 26px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .additionally__indication {
@@ -51,6 +75,16 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .additionally__button {
@@ -64,6 +98,19 @@
   font-weight: 400;
   text-transform: uppercase;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 11px 64px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 11px 216px;
+  }
 }
 
 .additionally__legend {
@@ -74,6 +121,14 @@
   font-family: "Arial", sans-serif;
   font-weight: 400;
   margin: 0 0 32px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 81px;
+  }
 }
 
 .additionally__wrapper-content {
@@ -88,6 +143,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin: 0 0 72px 0;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,4 +1,4 @@
-.comtacts-wrapper {
+.contacts-wrapper {
   flex-direction: column;
   display: flex;
   background-color: #f2f2f2;
@@ -8,8 +8,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 0 30px;
+    justify-content: space-around;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {

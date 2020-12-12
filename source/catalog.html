@@ -40,7 +40,7 @@
 
             <section class="catalog">
                 <h2 class="catalog__title visually-hidden">Список товаров</h2>
-                <ul class="catalog__list product">
+                <ul class="catalog__list">
                     <li class="catalog__item product">
                         <div class="product__block-wrapper">
                             <div class="product__content-wrapper">
@@ -224,11 +224,11 @@
                         </div>
                     </li>
                     <li class="catalog__item product product--more-prodact">
-                      <div class="product__block-wrapper">
-                        <h3 class="product__more-title">Показать еще 100500 товаров</h3>
-                        <p class="product__more-text">На самом деле вкусов гораздо больше!</p>
-                        <a class="product__more-prodact" href="#">показать все</a>
-                      </div>
+                        <div class="product__block-wrapper">
+                            <h3 class="product__more-title">Показать еще 100500 товаров</h3>
+                            <p class="product__more-text">На самом деле вкусов гораздо больше!</p>
+                            <a class="product__more-prodact" href="#">показать все</a>
+                        </div>
                     </li>
                 </ul>
             </section>
@@ -236,48 +236,56 @@
             <section class="additional-products">
                 <h2 class="additional-products__title">Дополнительные товары</h2>
                 <div class="additional-products__wrapper">
-                <ul class="additional-products__list">
-                    <li class="additional-products__item goods">
-                        <h3 class="goods__title">Сахарозаменитель</h3>
-                        <div class="goods__description-wrapper">
-                            <p class="goods__quantity">1 упаковка (100 г)</p>
-                            <p class="goods__price">200 Р</p>
-                        </div>
-                        <a class="goods__link" href="#">заказать</a>
-                    </li>
-                    <li class="additional-products__item goods">
-                        <h3 class="goods__title">Питьевая вода</h3>
-                        <div class="goods__description-wrapper">
-                            <p class="goods__quantity">5 литров</p>
-                            <p class="goods__price">50 Р</p>
-                        </div>
-                        <a class="goods__link" href="#">заказать</a>
-                    </li>
-                    <li class="additional-products__item goods">
-                        <h3 class="goods__title">молоко</h3>
-                        <div class="goods__description-wrapper">
-                            <p class="goods__quantity">1 литр</p>
-                            <p class="goods__price">100 Р</p>
-                        </div>
-                        <a class="goods__link" href="#">заказать</a>
-                    </li>
-                    <li class="additional-products__item goods">
-                        <h3 class="goods__title">витамины</h3>
-                        <div class="goods__description-wrapper">
-                            <p class="goods__quantity">1 упаковка (30 г)</p>
-                            <p class="goods__price">300 Р</p>
-                        </div>
-                        <a class="goods__link" href="#">заказать</a>
-                    </li>
-                </ul>
-                <div class="action">
-                    <h3 class="action__title visually-hidden">Акция</h3>
-                    <p class="action__description">
-                        Закажите все<br />
-                        и получите чехол для<br />
-                        кота в подарок!
-                    </p>
-                </div>
+                    <ul class="additional-products__list">
+                        <li class="additional-products__item goods">
+                            <div class="goods__text-wrapper">
+                                <h3 class="goods__title">Сахарозаменитель</h3>
+                                <div class="goods__description-wrapper">
+                                    <p class="goods__quantity">1 упаковка (100 г)</p>
+                                    <p class="goods__price">200 Р</p>
+                                </div>
+                            </div>
+                            <a class="goods__link" href="#">заказать</a>
+                        </li>
+                        <li class="additional-products__item goods">
+                            <div class="goods__text-wrapper">
+                                <h3 class="goods__title">Питьевая вода</h3>
+                                <div class="goods__description-wrapper">
+                                    <p class="goods__quantity">5 литров</p>
+                                    <p class="goods__price">50 Р</p>
+                                </div>
+                            </div>
+                            <a class="goods__link" href="#">заказать</a>
+                        </li>
+                        <li class="additional-products__item goods">
+                            <div class="goods__text-wrapper">
+                                <h3 class="goods__title">молоко</h3>
+                                <div class="goods__description-wrapper">
+                                    <p class="goods__quantity">1 литр</p>
+                                    <p class="goods__price">100 Р</p>
+                                </div>
+                            </div>
+                            <a class="goods__link" href="#">заказать</a>
+                        </li>
+                        <li class="additional-products__item goods">
+                            <div class="goods__text-wrapper">
+                                <h3 class="goods__title">витамины</h3>
+                                <div class="goods__description-wrapper">
+                                    <p class="goods__quantity">1 упаковка (30 г)</p>
+                                    <p class="goods__price">300 Р</p>
+                                </div>
+                            </div>
+                            <a class="goods__link" href="#">заказать</a>
+                        </li>
+                    </ul>
+                    <div class="action">
+                        <h3 class="action__title visually-hidden">Акция</h3>
+                        <p class="action__description">
+                            Закажите все<br />
+                            и получите чехол для<br />
+                            кота в подарок!
+                        </p>
+                    </div>
                 </div>
             </section>
         </main>
@@ -310,7 +318,7 @@
                 ></iframe>
             </div>
 
-            <div class="comtacts-wrapper contacts">
+            <div class="contacts-wrapper contacts">
                 <a class="contacts__link" href="index.html">
                     <svg width="128" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0)" fill="#111">
