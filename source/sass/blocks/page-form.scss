@@ -1,6 +1,5 @@
 .page-form {
   background-color: $white;
-  width: 320px;
 }
 
 .page-form__title {
@@ -11,4 +10,20 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   padding: 0 20px;
+  margin: 27px 0 37px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 34px 0 54px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 13px auto 56px auto;
+    max-width: 1220px;
+    padding: 0;
+  }
 }

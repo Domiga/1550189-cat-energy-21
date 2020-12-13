@@ -1,14 +1,102 @@
 .catalog {
   background-color: $white;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 
 .catalog__item {
   padding: 19px 20px 24px 20px;
   margin: 0;
   border-top: 1px solid $grey-catalog-border;
-  border-bottom: 1px solid $grey-catalog-border;
 
-  &:not(:last-child) {
-    margin-bottom: 25px;
+  &:last-child {
+    border-bottom: 1px solid $grey-catalog-border;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      border-top: none;
+      border-bottom: none;
+      width: 46%;
+      padding: 0 0 40px 0;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      background-color: $white;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-bottom: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    width: 46%;
+    min-height: 391px;
+    padding: 0 0 40px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-color: $grey;
+
+    &:last-child {
+      border: 2px solid $grey;
+      box-sizing: border-box;
+      text-align: center;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    border-top: none;
+    width: 20%;
+    min-height: 391px;
+    padding: 0 0 40px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-color: $grey;
+
+    &:last-child {
+      width: 20%;
+      min-height: 431px;
+      border: 2px solid $grey;
+      box-sizing: border-box;
+      text-align: center;
+      margin: 0;
+    }
+  }
+}
+
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 81px;
   }
 }

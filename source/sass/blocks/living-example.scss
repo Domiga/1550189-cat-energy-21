@@ -2,7 +2,45 @@
   display: flex;
   flex-direction: column;
   background-color: $basic-grey;
-  padding: 27px 20px 25px 20px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    background-image: none;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 67px 0;
+    width: 1220px;
+    margin: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .living-example__wrapper-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.living-example__wrapper-list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+  }
 }
 
 .living-example__title {
@@ -12,7 +50,18 @@
   line-height: 40px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  margin: 0 0 23px 0;
+  margin: 27px 0 23px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 76px 0;
+  }
 }
 
 .living-example__text {
@@ -23,6 +72,16 @@
   font-family: "Arial", sans-serif;
   font-weight: 400;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .living-example__list {
@@ -30,6 +89,17 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 25px 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 65px 0 0 0;
+  }
 }
 
 .living-example__wrapper-block {
@@ -51,6 +121,19 @@
   border-radius: 3px;
   width: 122px;
   height: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    width: 160px;
+    height: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 37px;
+    padding: 15px 0 18px 0;
+  }
 }
 
 .living-example__description {
@@ -64,9 +147,44 @@
   font-weight: 400;
   margin: -11px 0 0 18px;
   width: 87px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $white;
+    margin: -11px 0 0 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
-.living-example__cost {
+.living-example__text-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 63px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0 0 0 -48px;
+  }
+}
+
+.living-example__text-discription {
   text-align: center;
   color: $black;
   font-size: 14px;
@@ -74,5 +192,43 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 0 0 42px 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+    text-align: end;
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+  }
+}
+
+.living-example__text-cost {
+  text-align: center;
+  color: $black;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+  }
 }

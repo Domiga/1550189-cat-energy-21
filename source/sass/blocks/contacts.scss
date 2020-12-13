@@ -12,6 +12,14 @@
   margin: 0;
   padding: 20px 53px;
   border-bottom: 1px solid $grey-border-bottom;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+  }
 }
 
 .contacts__copyright {

@@ -13,8 +13,64 @@
   text-decoration: none;
   background-color: $white;
   border-bottom: 1px solid $special-grey-border-nav;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-bottom: none;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    color: $black;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-bottom: none;
+    padding: 0;
+  }
 }
 
 .site-list__item:nth-child(1) a {
   border-top: 1px solid $special-grey-border-nav;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-top: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item:not(:last-child) {
+    margin-right: 36px;
+  }
+}
+
+.site-list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 440px;
+    padding-top: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 63px;
+  }
 }

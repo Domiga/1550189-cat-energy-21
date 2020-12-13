@@ -1,23 +1,57 @@
 .how-it-works {
   display: flex;
   flex-direction: column;
-  margin: 27px 0 0 0;
-  padding: 0 20px 42px 20px;
+  margin: 27px 0 42px 0;
+  padding: 0 20px;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 71px auto 11px auto;
+    width: 1220px;
+  }
 }
 
 .how-it-works__list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   padding-left: 80px;
   margin: 0;
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    row-gap: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
 }
 
 .how-it-works__item {
   position: relative;
-}
 
-.how-it-works__item:not(:last-child) {
-  margin: 0 0 20px 0;
+  @media (min-width: $tablet-width) {
+    width: 34%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+  }
 }
 
 .how-it-works__title {
@@ -28,6 +62,16 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   margin: 0 0 36px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .how-it-works__text {
@@ -38,6 +82,17 @@
   font-family: "Arial", sans-serif;
   font-weight: 400;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 150px 29px 57px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .how-it-works__item--leaf::before {
@@ -48,6 +103,16 @@
   background-image: url("../../img/how-it-works-list.svg");
   width: 60px;
   height: 60px;
+
+  @media (min-width: $tablet-width) {
+    top: 46px;
+    left: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .how-it-works__item--powder::before {
@@ -58,6 +123,16 @@
   background-image: url("../../img/how-it-works-powder.svg");
   width: 60px;
   height: 60px;
+
+  @media (min-width: $tablet-width) {
+    top: 46px;
+    left: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .how-it-works__item--utensils::before {
@@ -68,6 +143,16 @@
   background-image: url("../../img/how-it-works-fork.svg");
   width: 60px;
   height: 60px;
+
+  @media (min-width: $tablet-width) {
+    top: 46px;
+    left: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .how-it-works__item--clock::before {
@@ -78,4 +163,14 @@
   background-image: url("../../img/how-it-works-clock.svg");
   width: 60px;
   height: 60px;
+
+  @media (min-width: $tablet-width) {
+    top: 46px;
+    left: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
