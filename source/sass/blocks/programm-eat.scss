@@ -146,9 +146,10 @@
   }
 }
 
-.programm-eat__border {
+.programm-eat--border {
   border-bottom: 1px solid $grey-border-bottom;
-  margin-bottom: 15px;
+  margin-top: 15px;
+  min-height: 113px;
 
   @media (min-width: $tablet-width) {
     border: none;

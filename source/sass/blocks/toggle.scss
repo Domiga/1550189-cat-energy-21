@@ -3,9 +3,14 @@
   flex-direction: row;
   justify-content: space-around;
 
+  @media (min-width: $tablet-width) {
+    background-color: $basic-grey;
+  }
+
   @media (min-width: $desktop-width) {
     justify-content: space-between;
     gap: 24px;
+    background-color: $basic-grey;
   }
 }
 

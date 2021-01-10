@@ -45,6 +45,7 @@
   outline: 0;
   border: 1px solid $grey-border-light;
   margin: 38px 0 0 0;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

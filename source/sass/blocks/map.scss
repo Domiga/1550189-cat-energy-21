@@ -1,6 +1,17 @@
-@media (min-width: $desktop-width) {
-  .map {
+.map {
+  width: 100%;
+  height: 362;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 400;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
     max-width: 1440px;
+    height: 400;
     margin: auto;
   }
 }
