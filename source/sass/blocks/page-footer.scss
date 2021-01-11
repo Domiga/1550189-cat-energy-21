@@ -1,4 +1,9 @@
 .page-footer {
-  background-color: $white;
-  position: relative;
+  background-color: $grey;
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    position: relative;
+  }
 }
