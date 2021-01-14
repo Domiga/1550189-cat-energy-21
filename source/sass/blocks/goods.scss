@@ -89,6 +89,16 @@
   padding: 8px 110px;
   margin-bottom: 18px;
 
+  &:hover {
+    background-color: $green-hover;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $green-hover;
+    color: $white-speshial;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;

@@ -17,12 +17,20 @@
     justify-content: space-around;
     align-items: center;
     position: absolute;
-    left: 110px;
+    left: 0;
     top: 95px;
     margin: 0 auto;
     width: 570px;
     height: 201px;
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .invitation-wrapper {
+    width: 1220px;
+    position: relative;
+    margin: 0 auto;
   }
 }
 

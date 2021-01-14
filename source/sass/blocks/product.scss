@@ -135,6 +135,16 @@
   padding: 10px 109px;
   margin-top: 24px;
 
+  &:hover {
+    background-color: $green-hover;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $green-hover;
+    color: $white-speshial;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     padding: 10px 93px;
@@ -266,6 +276,16 @@
   background-color: $grey;
   padding: 10px 94px;
   margin: 21px 0 25px 0;
+
+  &:hover {
+    background-color: $grey-catalog-border;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $grey-catalog-border;
+    color: $grey-catalog-border-speshial;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 10px 79px;

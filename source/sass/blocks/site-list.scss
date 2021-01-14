@@ -27,12 +27,19 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    color: $black;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     border-bottom: none;
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list .main-navigation__link--white {
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1;
+    color: $white;
   }
 }
 
@@ -72,5 +79,57 @@
     justify-content: space-between;
     width: 100%;
     padding-top: 63px;
+  }
+}
+
+.site-list__item {
+  @media (min-width: $tablet-width) {
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top: 39px;
+        height: 2px;
+        background: $green;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top: 39px;
+        height: 2px;
+        background: $green;
+      }
+    }
+
+    &--active-white {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top: 39px;
+        height: 2px;
+        background: $white;
+        z-index: 1;
+      }
+    }
   }
 }

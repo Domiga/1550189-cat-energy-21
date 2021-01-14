@@ -15,6 +15,7 @@
                 <button class="main-navigation__toggle" type="button">
                     <span class="visually-hidden">Открыть меню</span>
                 </button>
+                <div class="main-navigation__wrapper">
                 <ul class="main-navigation__list site-list">
                     <li class="site-list__item">
                         <a class="main-navigation__link" href="index.html">
@@ -34,6 +35,23 @@
                 </ul>
             </nav>
         </header>
+
+        <script>
+          var navMain = document.querySelector('.main-navigation');
+          var navToggle = document.querySelector('.main-navigation__toggle');
+
+          navMain.classList.remove('main-navigation--nojs');
+
+          navToggle.addEventListener('click', function() {
+            if (navMain.classList.contains('main-navigation--closed')) {
+              navMain.classList.remove('main-navigation--closed');
+              navMain.classList.add('main-navigation--opened');
+            } else {
+              navMain.classList.add('main-navigation--closed');
+              navMain.classList.remove('main-navigation--opened');
+            }
+          });
+        </script>
 
         <main class="page-catalog">
             <h1 class="page-catalog__title">Каталог продукции</h1>
@@ -234,7 +252,9 @@
             </section>
 
             <section class="additional-products">
+              <div class="additional-products__title-wrapper">
                 <h2 class="additional-products__title">Дополнительные товары</h2>
+              </div>
                 <div class="additional-products__wrapper">
                     <ul class="additional-products__list">
                         <li class="additional-products__item goods">
@@ -289,18 +309,21 @@
                 </div>
             </section>
         </main>
-        <footer class="page-footer page-footer__wrapper">
-            <div class="invitation invitation--grey">
+        <footer class="page-footer">
+          <div class="page-footer__wrapper">
+            <div class="invitation-wrapper">
+            <div class="invitation">
                 <h2 class="invitation__title">
-                    приглашаем<br />
-                    к сотрудничеству<br />
+                    приглашаем<br class="transfer-mobile"/>
+                    к сотрудничеству<br class="transfer-mobile"/>
                     дилеров!
                 </h2>
                 <p class="invitation__address">
-                    ул. Большая<br />
-                    Конюшенная, д. 19/8<br />
+                    ул. Большая<br class="transfer-mobile"/>
+                    Конюшенная, д. 19/8<br class="transfer-mobile"/>
                     Санкт-Петербург
                 </p>
+            </div>
             </div>
 
             <div class="map">
@@ -384,6 +407,7 @@
                         />
                     </svg>
                 </a>
+            </div>
             </div>
         </footer>
     </body>

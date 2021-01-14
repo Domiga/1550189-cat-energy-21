@@ -95,12 +95,11 @@
   }
 
   .main-navigation__wrapper {
-    position: absolute;
     top: 0;
     right: 0;
     left: 0;
     z-index: 10;
-    min-height: 24vh;
+    min-height: 0;
     background-color: $white;
   }
 
@@ -109,7 +108,6 @@
   }
 
   .main-navigation--nojs .main-navigation__wrapper {
-    position: static;
     min-height: 0;
   }
 
@@ -117,4 +115,3 @@
     display: block;
   }
 }
-
