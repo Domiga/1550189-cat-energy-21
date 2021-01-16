@@ -3,12 +3,14 @@
   flex-direction: row;
   background-color: $white;
   padding: 0 20px;
-  margin: 28px 0 22px 0;
+  margin: 28px auto 22px auto;
   justify-content: space-between;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     padding: 62px 72px 58px 71px;
     margin: 0;
+    width: 625px;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,8 +28,12 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .invitation-wrapper {
+.invitation-wrapper {
+  margin: 0 auto;
+  background-color: $white;
+  padding-bottom: 1px;
+
+  @media (min-width: $desktop-width) {
     width: 1220px;
     position: relative;
     margin: 0 auto;
@@ -51,6 +57,7 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
+  width: 140px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -71,6 +78,7 @@
   font-family: "Arial", sans-serif;
   font-weight: 400;
   margin: 0;
+  width: 140px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;

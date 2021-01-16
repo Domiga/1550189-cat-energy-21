@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: $white;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,13 +17,15 @@
 .living-example__wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: $basic-grey;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     background-image: none;
-    padding: 0;
+    padding: 0 30px;
     background-color: $white;
+    align-items: start;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,20 +34,45 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .living-example__wrap-content {
+.living-example__wrap-content {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
     background: linear-gradient(to right, $grey 70%, $basic-grey 70% 100%);
     padding: 0 110px 47px 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .living-example__wrapper-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  .living-example__wrap-content-inside {
     width: 1220px;
+    display: flex;
     margin: 0 auto;
+  }
+}
+
+.living-example__wrapper-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -55,9 +83,9 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    align-items: start;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
+    gap: 168px;
   }
 
   @media (min-width: $desktop-width) {
@@ -80,7 +108,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding: 0 30px;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
@@ -88,6 +116,20 @@
     line-height: 60px;
     margin: 0 auto;
     width: 1220px;
+  }
+}
+
+.living-example__title-wrapper {
+  text-align: left;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -99,19 +141,20 @@
   font-family: "Arial", sans-serif;
   font-weight: 400;
   margin: 0;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    padding: 0 30px;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 24px;
     padding: 0;
-    margin: 0 auto;
-    width: 1220px;
+    margin: 0;
+    width: 436px;
   }
 }
 

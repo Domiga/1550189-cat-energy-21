@@ -8,9 +8,13 @@
     </head>
     <body class="page__body">
         <header class="page-header">
-            <a class="page-header__logo" href="index.html">
-                <img src="img/logo.svg" width="191" height="38" alt="«Кэт энерджи»" />
+            <picture>
+            <a class="page-header__logo" href="#">
+              <source media="(min-width: 1440px)" srcset="img/logo-header-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-header-tablet.svg">
+              <img src="img/logo-header-mobile.svg" width="191" height="38" alt="«Кэт энерджи»">
             </a>
+            </picture>
             <nav class="main-navigation main-navigation--closed main-navigation--nojs">
                 <button class="main-navigation__toggle" type="button">
                     <span class="visually-hidden">Открыть меню</span>
@@ -60,8 +64,7 @@
                 <div class="form-wrapper">
                     <fieldset class="content-form__information cat-information">
                         <legend class="cat-information__title">
-                            Заполните анкету, и мы подберем<br />
-                            программу питания для вашего кота
+                            Заполните анкету, и мы подберем программу питания для вашего кота
                         </legend>
                         <ul class="cat-information__list">
                             <li class="cat-information__item">
@@ -116,8 +119,7 @@
                 <fieldset class="content-form__information contacts-form">
                     <div class="contacts-form__title-wrapper">
                     <legend class="contacts-form__title">
-                        Контактные данные<br />
-                        (владельца кота)
+                        Контактные данные (владельца кота)
                     </legend>
                     </div>
                     <ul class="contacts-form__items">
@@ -198,14 +200,10 @@
             <div class="invitation-wrapper">
             <div class="invitation">
                 <h2 class="invitation__title">
-                    приглашаем<br class="transfer-mobile"/>
-                    к сотрудничеству<br class="transfer-mobile"/>
-                    дилеров!
+                    приглашаем к сотрудничеству дилеров!
                 </h2>
                 <p class="invitation__address">
-                    ул. Большая<br class="transfer-mobile"/>
-                    Конюшенная, д. 19/8<br class="transfer-mobile"/>
-                    Санкт-Петербург
+                    ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
                 </p>
             </div>
             </div>

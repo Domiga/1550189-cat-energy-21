@@ -5,6 +5,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     display: flex;
     flex-direction: row;
   }
@@ -12,6 +13,23 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation--img {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -109px;
+      width: 720px;
+      height: 694px;
+      background-color: $green;
+      background-image: url("../img/background-img-desktop.jpg");
+      background-repeat: no-repeat;
+      z-index: 0;
+    }
   }
 }
 

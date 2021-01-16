@@ -7,6 +7,7 @@
     flex-direction: column;
     margin: 0 auto;
     padding: 0;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,11 +40,13 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   margin: 0;
+  width: 76px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+    width: 156px;
   }
 
   @media (min-width: $desktop-width) {
@@ -233,6 +236,7 @@
     font-size: 20px;
     line-height: 22px;
     margin: 0 0 23px 0;
+    width: 134px;
   }
 
   @media (min-width: $desktop-width) {
@@ -255,6 +259,7 @@
     font-size: 16px;
     line-height: 18px;
     margin: 0 0 87px 0;
+    width: 167px;
   }
 
   @media (min-width: $desktop-width) {

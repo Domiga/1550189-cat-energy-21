@@ -20,6 +20,7 @@
 .programm-eat__list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   gap: 20px;
   list-style: none;
@@ -48,7 +49,8 @@
   padding: 30px 20px 18px 19px;
 
   @media (min-width: $tablet-width) {
-    padding: 41px 51px 59px 52px;
+    padding: 0 0 59px 0;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,18 +64,24 @@
   top: 21px;
   left: 22px;
   position: absolute;
-  background-image: url("../../img/programm-eat-sfinks.svg");
+  background-image: url("../img/cat-sfinx-mobile.svg");
   width: 50px;
   height: 53px;
 
   @media (min-width: $tablet-width) {
-    top: 154px;
-    left: 500px;
+    top: 41px;
+    left: 467px;
+    background-image: url("../img/cat-sfinx-tablet.svg");
+    width: 200px;
+    height: 211px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 66px;
-    left: 51px;
+    top: 16px;
+    left: 58px;
+    background-image: url("../img/cat-sfinx-desktop.svg");
+    width: 100px;
+    height: 106px;
   }
 }
 
@@ -82,18 +90,24 @@
   top: 24px;
   left: 13px;
   position: absolute;
-  background-image: url("../../img/programm-eat-tiger.svg");
+  background-image: url("../img/tiger-mobile.svg");
   width: 67px;
   height: 50px;
 
   @media (min-width: $tablet-width) {
-    top: 154px;
-    left: 500px;
+    top: 41px;
+    left: 417px;
+    background-image: url("../img/tiger-tablet.svg");
+    width: 268px;
+    height: 200px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 66px;
-    left: 51px;
+    top: 21px;
+    left: 45px;
+    background-image: url("../../img/tiger-desktop.svg");
+    width: 134px;
+    height: 100px;
   }
 }
 
@@ -108,7 +122,8 @@
   padding: 0 0 0 71px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding-top: 52px;
+    padding-left: 52px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -150,13 +165,31 @@
   border-bottom: 1px solid $grey-border-bottom;
   margin-top: 15px;
   min-height: 113px;
+  width: 227px;
 
   @media (min-width: $tablet-width) {
     border: none;
+    width: 377px;
+    padding-left: 52px;
   }
 
   @media (min-width: $desktop-width) {
     border: none;
+    width: 467px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programm-eat--tiger {
+    width: 340px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programm-eat--tiger {
+    width: 445px;
+    padding: 0;
   }
 }
 
@@ -185,11 +218,12 @@
     border: none;
     font-size: 20px;
     line-height: 30px;
+    padding-left: 52px;
 
     &::after {
       content: "";
-      top: 11px;
-      left: 125px;
+      top: 10px;
+      left: 176px;
       position: absolute;
       background-image: url("../../img/arrow.svg");
       width: 24px;
@@ -203,5 +237,6 @@
     line-height: 30px;
     width: 24px;
     height: 12px;
+    padding: 0;
   }
 }

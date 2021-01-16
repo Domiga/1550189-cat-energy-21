@@ -7,23 +7,4 @@
   min-height: 100%;
   margin: 0 auto;
   background-color: $white;
-
-  .transfer-tablet,
-  .transfer-desktop {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    .transfer-mobile,
-    .transfer-desktop {
-      display: none;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    .transfer-mobile,
-    .transfer-tablet {
-      display: none;
-    }
-  }
 }
