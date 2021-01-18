@@ -8,54 +8,54 @@
     </head>
     <body class="page__body">
         <header class="page-header">
-          <picture>
             <a class="page-header__logo" href="#">
-              <source media="(min-width: 1440px)" srcset="img/logo-header-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-header-tablet.svg">
-              <img src="img/logo-header-mobile.svg" width="191" height="38" alt="«Кэт энерджи»">
+                <picture>
+                    <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" />
+                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
+                    <img src="img/logo-mobile.svg" width="191" height="38" alt="«Кэт энерджи»" />
+                </picture>
             </a>
-            </picture>
             <nav class="main-navigation main-navigation--closed main-navigation--nojs main-navigation--img">
                 <button class="main-navigation__toggle" type="button">
                     <span class="visually-hidden">Открыть меню</span>
                 </button>
                 <div class="main-navigation__wrapper">
-                <ul class="main-navigation__list site-list">
-                    <li class="site-list__item site-list__item--active site-list__item--active-white">
-                        <a class="main-navigation__link main-navigation__link--white">
-                            главная
-                        </a>
-                    </li>
-                    <li class="site-list__item">
-                        <a class="main-navigation__link main-navigation__link--white" href="catalog.html">
-                            каталог продукции
-                        </a>
-                    </li>
-                    <li class="site-list__item">
-                        <a class="main-navigation__link main-navigation__link--white" href="form.html">
-                            подбор программы
-                        </a>
-                    </li>
-                </ul>
+                    <ul class="main-navigation__list site-list">
+                        <li class="site-list__item site-list__item--active site-list__item--active-white">
+                            <a class="main-navigation__link main-navigation__link--white">
+                                главная
+                            </a>
+                        </li>
+                        <li class="site-list__item">
+                            <a class="main-navigation__link main-navigation__link--white" href="catalog.html">
+                                каталог продукции
+                            </a>
+                        </li>
+                        <li class="site-list__item">
+                            <a class="main-navigation__link main-navigation__link--white" href="form.html">
+                                подбор программы
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </header>
 
         <script>
-          var navMain = document.querySelector('.main-navigation');
-          var navToggle = document.querySelector('.main-navigation__toggle');
+            var navMain = document.querySelector(".main-navigation");
+            var navToggle = document.querySelector(".main-navigation__toggle");
 
-          navMain.classList.remove('main-navigation--nojs');
+            navMain.classList.remove("main-navigation--nojs");
 
-          navToggle.addEventListener('click', function() {
-            if (navMain.classList.contains('main-navigation--closed')) {
-              navMain.classList.remove('main-navigation--closed');
-              navMain.classList.add('main-navigation--opened');
-            } else {
-              navMain.classList.add('main-navigation--closed');
-              navMain.classList.remove('main-navigation--opened');
-            }
-          });
+            navToggle.addEventListener("click", function () {
+                if (navMain.classList.contains("main-navigation--closed")) {
+                    navMain.classList.remove("main-navigation--closed");
+                    navMain.classList.add("main-navigation--opened");
+                } else {
+                    navMain.classList.add("main-navigation--closed");
+                    navMain.classList.remove("main-navigation--opened");
+                }
+            });
         </script>
 
         <main class="page-main">
@@ -107,166 +107,165 @@
             </section>
 
             <section class="how-it-works">
-              <div class="how-it-works-wrapper">
-              <div class="how-it-works__title-wrapper">
-                <h2 class="how-it-works__title">
-                    Как это работает
-                </h2>
-                </div>
-                <ul class="how-it-works__list">
-                    <li class="how-it-works__item how-it-works__item--leaf">
-                        <p class="how-it-works__text">
-                            Функциональное питание содержит только полезные питательные вещества.
-                        </p>
-                    </li>
-                    <li class="how-it-works__item how-it-works__item--powder">
-                        <p class="how-it-works__text">
-                            Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-                        </p>
-                    </li>
-                    <li class="how-it-works__item how-it-works__item--utensils">
-                        <p class="how-it-works__text">
-                            Замените один-два приема обычной еды на наше функциональное питание.
-                        </p>
-                    </li>
-                    <li class="how-it-works__item how-it-works__item--clock">
-                        <p class="how-it-works__text">
-                            Уже через месяц наслаждайтесь изменениями к лучшему<br class="how-it-works__text--tablet"> вашего питомца!
-                        </p>
-                    </li>
-                </ul>
+                <div class="how-it-works-wrapper">
+                    <div class="how-it-works__title-wrapper">
+                        <h2 class="how-it-works__title">
+                            Как это работает
+                        </h2>
+                    </div>
+                    <ul class="how-it-works__list">
+                        <li class="how-it-works__item how-it-works__item--leaf">
+                            <p class="how-it-works__text">
+                                Функциональное питание содержит только полезные питательные вещества.
+                            </p>
+                        </li>
+                        <li class="how-it-works__item how-it-works__item--powder">
+                            <p class="how-it-works__text">
+                                Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+                            </p>
+                        </li>
+                        <li class="how-it-works__item how-it-works__item--utensils">
+                            <p class="how-it-works__text">
+                                Замените один-два приема обычной еды на наше функциональное питание.
+                            </p>
+                        </li>
+                        <li class="how-it-works__item how-it-works__item--clock">
+                            <p class="how-it-works__text">
+                                Уже через месяц наслаждайтесь изменениями к лучшему<br class="how-it-works__text--tablet" />
+                                вашего питомца!
+                            </p>
+                        </li>
+                    </ul>
                 </div>
             </section>
 
             <section class="living-example">
-              <div class="living-example__wrapper">
-                <div class="living-example__title-wrapper">
-                <h2 class="living-example__title">Живой пример</h2>
-                </div>
-                <div class="living-example__wrap-content">
-                  <div class="living-example__wrap-content-inside">
-                <div class="living-example__wrapper-content">
-                <p class="living-example__text">
-                    Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял
-                    своих привычек и по-прежнему спит по 16 часов в день.
-                </p>
+                <div class="living-example__wrapper">
+                    <div class="living-example__title-wrapper">
+                        <h2 class="living-example__title">Живой пример</h2>
+                    </div>
+                    <div class="living-example__wrap-content">
+                        <div class="living-example__wrap-content-inside">
+                            <div class="living-example__wrapper-content">
+                                <p class="living-example__text">
+                                    Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в
+                                    день.
+                                </p>
 
-                    <div class="living-example__wrapper-list">
-                        <dl class="living-example__list">
-                            <div class="living-example__wrapper-block">
-                                <dt class="living-example__heading">5 кг</dt>
-                                <dd class="living-example__description">
-                                    снижение веса
-                                </dd>
+                                <div class="living-example__wrapper-list">
+                                    <dl class="living-example__list">
+                                        <div class="living-example__wrapper-block">
+                                            <dt class="living-example__heading">5 кг</dt>
+                                            <dd class="living-example__description">
+                                                снижение веса
+                                            </dd>
+                                        </div>
+                                        <div class="living-example__wrapper-block">
+                                            <dt class="living-example__heading">60 дней</dt>
+                                            <dd class="living-example__description">
+                                                затрачено времени
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                    <div class="living-example__text-wrapper">
+                                        <p class="living-example__text-discription">затраты на питание:</p>
+                                        <p class="living-example__text-cost">15000 руб.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="living-example__wrapper-block">
-                                <dt class="living-example__heading">60 дней</dt>
-                                <dd class="living-example__description">
-                                    затрачено времени
-                                </dd>
+
+                            <div class="range-filter">
+                                <p class="range-filter__text">было</p>
+                                <div class="range-filter__controls controls">
+                                  <div class="controls__scale"></div>
+                                </div>
+                                <div class="range-filter__toggle"></div>
+                                <p class="range-filter__text">стало</p>
                             </div>
-                        </dl>
-                        <div class="living-example__text-wrapper">
-                            <p class="living-example__text-discription">затраты на питание:</p>
-                            <p class="living-example__text-cost">15000 руб.</p>
-                        </div>
+
                         </div>
                     </div>
-                    <div class="toggle">
-                        <p class="toggle__text">было</p>
-                        <div class="toggle__scale">
-                            <div class="toggle__bar"></div>
-                        </div>
-                        <div class="toggle__range-controls">
-                            <div class="toggle__condition" tabindex="0" title="Ползунок"></div>
-                        </div>
-                        <p class="toggle__text">стало</p>
-                    </div>
-</div>
-
                 </div>
-              </div>
             </section>
         </main>
 
         <footer class="page-footer">
-          <div class="page-footer__wrapper">
-            <div class="invitation-wrapper">
-            <div class="invitation">
-                <h2 class="invitation__title">
-                    приглашаем к сотрудничеству дилеров!
-                </h2>
-                <p class="invitation__address">
-                    ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-                </p>
-            </div>
-            </div>
+            <div class="page-footer__wrapper">
+                <div class="invitation-wrapper">
+                    <div class="invitation">
+                        <h2 class="invitation__title">
+                            приглашаем к сотрудничеству дилеров!
+                        </h2>
+                        <p class="invitation__address">
+                            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+                        </p>
+                    </div>
+                </div>
 
-            <div class="map">
-                <h2 class="map__title visually-hidden">
-                    Как до нас добраться
-                </h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.4063378774833!2d30.329370056308434!3d59.937895630660215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310edbef855b%3A0xee3abe449bc142d7!2z0JzQuNGF0LDQudC70L7QstGB0LrQuNC5INGC0LXQsNGC0YA!5e0!3m2!1sru!2sru!4v1605283474130!5m2!1sru!2sru"
-                    width="100%"
-                    height="362px"
-                    style="border: 0;"
-                    allowfullscreen=""
-                    aria-hidden="false"
-                    tabindex="0"
-                ></iframe>
-            </div>
+                <div class="map">
+                    <h2 class="map__title visually-hidden">
+                        Как до нас добраться
+                    </h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.4063378774833!2d30.329370056308434!3d59.937895630660215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310edbef855b%3A0xee3abe449bc142d7!2z0JzQuNGF0LDQudC70L7QstGB0LrQuNC5INGC0LXQsNGC0YA!5e0!3m2!1sru!2sru!4v1605283474130!5m2!1sru!2sru"
+                        width="100%"
+                        height="362px"
+                        style="border: 0;"
+                        allowfullscreen=""
+                        aria-hidden="false"
+                        tabindex="0"
+                    ></iframe>
+                </div>
 
-            <div class="contacts-wrapper contacts">
-              <a class="contacts__link" href="index.html">
-                    <picture>
-                              <source media="(min-width: 1440px)" srcset="img/cat-energy-tablet-desktop.svg">
-                              <source media="(min-width: 768px)" srcset="img/cat-energy-tablet-desktop.svg">
-                              <img src="img/cat-energy-mobile.svg" width="128" height="24" alt="«Cat Energy»">
-                            </picture>
-                    </svg>
-                </a>
-                <ul class="contacts__list social">
-                    <li class="social__item">
-                        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                            <span class="visually-hidden">ВКонтакте</span>
-                            <picture>
-                              <source media="(min-width: 1440px)" srcset="img/vk-tablet-desktop.svg">
-                              <source media="(min-width: 768px)" srcset="img/vk-tablet-desktop.svg">
-                              <img src="img/vk-mobile.svg" width="23" height="16" alt="«VKontakte»">
-                            </picture>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-                            <span class="visually-hidden">Инстаграм</span>
-                            <picture>
-                              <source media="(min-width: 1440px)" srcset="img/instagram-mobile-desktop.svg">
-                              <source media="(min-width: 768px)" srcset="img/instagram-mobile-desktop.svg">
-                              <img src="img/instagram-mobile.svg" width="16" height="16" alt="«Instagram»">
-                            </picture>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-                            <span class="visually-hidden">Фейсбук</span>
-                            <picture>
-                              <source media="(min-width: 1440px)" srcset="img/facebook-tablet-desktop.svg">
-                              <source media="(min-width: 768px)" srcset="img/facebook-tablet-desktop.svg">
-                              <img src="img/facebook-mobile.svg" width="10" height="18" alt="«Facebook»">
-                            </picture>
-                        </a>
-                    </li>
-                </ul>
-                <a class="contacts__copyright" href="https://htmlacademy.ru/intensive/adaptive">
-                    <span class="visually-hidden">Ссылка на интенсив HTML Academy</span>
-                    <picture>
-                      <source media="(min-width: 1440px)" srcset="img/logo_html-tablet-desktop.svg">
-                      <source media="(min-width: 768px)" srcset="img/logo_html-tablet-desktop.svg">
-                      <img src="img/logo_html-mobile.svg" width="281" height="34" alt="«HTML Academy»">
-                    </picture>
-                </a>
-            </div>
+                <div class="contacts-wrapper contacts">
+                    <a class="contacts__link" href="index.html">
+                        <picture>
+                            <source media="(min-width: 1440px)" srcset="img/cat-energy-tablet-desktop.svg" />
+                            <source media="(min-width: 768px)" srcset="img/cat-energy-tablet-desktop.svg" />
+                            <img src="img/cat-energy-mobile.svg" width="128" height="24" alt="«Cat Energy»" />
+                        </picture>
+                    </a>
+                    <ul class="contacts__list social">
+                        <li class="social__item">
+                            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                                <span class="visually-hidden">ВКонтакте</span>
+                                <picture>
+                                    <source media="(min-width: 1440px)" srcset="img/vk-tablet-desktop.svg" />
+                                    <source media="(min-width: 768px)" srcset="img/vk-tablet-desktop.svg" />
+                                    <img src="img/vk-mobile.svg" width="23" height="16" alt="«VKontakte»" />
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+                                <span class="visually-hidden">Инстаграм</span>
+                                <picture>
+                                    <source media="(min-width: 1440px)" srcset="img/instagram-mobile-desktop.svg" />
+                                    <source media="(min-width: 768px)" srcset="img/instagram-mobile-desktop.svg" />
+                                    <img src="img/instagram-mobile.svg" width="16" height="16" alt="«Instagram»" />
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                                <span class="visually-hidden">Фейсбук</span>
+                                <picture>
+                                    <source media="(min-width: 1440px)" srcset="img/facebook-tablet-desktop.svg" />
+                                    <source media="(min-width: 768px)" srcset="img/facebook-tablet-desktop.svg" />
+                                    <img src="img/facebook-mobile.svg" width="10" height="18" alt="«Facebook»" />
+                                </picture>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="contacts__copyright" href="https://htmlacademy.ru/intensive/adaptive">
+                        <span class="visually-hidden">Ссылка на интенсив HTML Academy</span>
+                        <picture>
+                            <source media="(min-width: 1440px)" srcset="img/logo-html-tablet-desktop.svg" />
+                            <source media="(min-width: 768px)" srcset="img/logo-html-tablet-desktop.svg" />
+                            <img src="img/logo-html-mobile.svg" width="281" height="34" alt="«HTML Academy»" />
+                        </picture>
+                    </a>
+                </div>
             </div>
         </footer>
     </body>

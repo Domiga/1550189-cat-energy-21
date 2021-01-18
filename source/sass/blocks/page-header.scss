@@ -3,21 +3,25 @@
   flex-direction: column;
   background-color: $white;
   color: $black;
+  width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0 30px;
+    width: 708px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0;
-    max-width: 1220px;
-    margin: auto;
+    padding: 0 110px;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -38,15 +42,19 @@
 }
 
 .page-header__logo img {
-  width: 190px;
-  height: 38px;
   padding-top: 11px;
+  width: 191px;
+  height: 38px;
 
   @media (min-width: $tablet-width) {
     padding-top: 24px;
+    width: 174px;
+    height: 52px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 53px;
+    width: 202px;
+    height: 59px;
   }
 }

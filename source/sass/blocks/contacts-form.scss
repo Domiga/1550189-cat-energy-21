@@ -20,13 +20,15 @@
 .contacts-form__items {
   display: flex;
   flex-direction: column;
-  margin: 36px 0 24px 0;
+  margin: 36px auto 24px auto;
   padding: 0 20px;
   list-style: none;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
-    margin: 76px 0 24px 0;
-    padding: 0 70px;
+    margin: 76px auto 24px auto;
+    padding: 0 66px;
+    width: 635px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,6 +38,7 @@
     flex-wrap: wrap;
     margin: 76px auto 69px auto;
     width: 1220px;
+    padding: 0 110px;
   }
 }
 

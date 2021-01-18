@@ -3,16 +3,16 @@
   flex-direction: column;
   padding: 0 20px;
   background-color: $white;
-  margin: 22px 0 0 0;
+  margin: 22px auto 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    padding: 0;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding: 0;
+    padding: 0 110px;
     margin: auto;
   }
 }
@@ -28,12 +28,14 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    padding: 0 30px;
     gap: 30px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    padding: 0;
     gap: 80px;
     display: flex;
     flex-direction: row;
@@ -46,7 +48,7 @@
   background-color: $grey;
   color: $black;
   text-align: left;
-  padding: 30px 20px 18px 19px;
+  padding: 30px 20px 18px 33px;
 
   @media (min-width: $tablet-width) {
     padding: 0 0 59px 0;

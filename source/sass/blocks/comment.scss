@@ -83,13 +83,16 @@
 
 .comment__indication-wrapper {
   padding: 0 20px;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 0 70px;
+    padding: 0 68px;
+    width: 631px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding: 0 110px;
     margin: 0 auto;
     width: 1220px;
   }

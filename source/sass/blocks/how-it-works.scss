@@ -3,18 +3,23 @@
   flex-direction: column;
   align-items: center;
   margin: 27px 0 42px 0;
-  padding: 0 20px;
+  padding: 0;
   text-align: left;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
     align-items: start;
+    z-index: 1;
+    width: 708px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding: 0 110px;
     margin: 71px auto 11px auto;
     width: 1220px;
+    z-index: 1;
   }
 }
 
@@ -22,6 +27,18 @@
   display: flex;
   flex-direction: column;
   align-items: start;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 633px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 1220px;
+  }
 }
 
 .how-it-works__list {
@@ -33,6 +50,8 @@
   row-gap: 20px;
 
   @media (min-width: $tablet-width) {
+    counter-reset: section;
+    list-style-type: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -43,6 +62,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    counter-reset: section;
+    list-style-type: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -66,13 +87,13 @@
 
 .how-it-works__title {
   color: $black;
-  background-color: $white;
   font-size: 36px;
   line-height: 40px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   margin: 0 0 36px 0;
   text-align: left;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -100,7 +121,6 @@
 
 .how-it-works__text {
   color: $special-grey;
-  background-color: $white;
   font-size: 14px;
   line-height: 18px;
   font-family: "Arial", sans-serif;
@@ -113,13 +133,11 @@
     line-height: 24px;
     padding: 150px 0 57px 0;
     width: 246px;
-    z-index: 2;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 24px;
-    z-index: 2;
   }
 }
 
@@ -241,104 +259,120 @@
 
 .how-it-works__item--leaf::after {
   @media (min-width: $tablet-width) {
-    content: "";
-    top: 0;
-    left: 124px;
+    counter-increment: section;
+    content: counters(section, ".") "";
     position: absolute;
-    background-image: url("../img/one-tablet-desktop.svg");
-    background-repeat: no-repeat;
-    width: 112px;
-    height: 280px;
-    z-index: 0;
+    color: $grey;
+    font-size: 280px;
+    line-height: 280px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    top: 0;
+    right: 0;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    content: "";
-    top: 0;
-    left: 124px;
+    counter-increment: section;
+    content: counters(section, ".") "";
     position: absolute;
-    background-image: url("../img/one-tablet-desktop.svg");
-    background-repeat: no-repeat;
-    width: 112px;
-    height: 280px;
-    z-index: 0;
+    color: $grey;
+    font-size: 280px;
+    line-height: 280px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    top: 0;
+    right: 84px;
+    z-index: -1;
   }
 }
 
 .how-it-works__item--powder::after {
   @media (min-width: $tablet-width) {
-    content: "";
-    top: 0;
-    left: 124px;
+    counter-increment: section;
+    content: counters(section, ".") "";
     position: absolute;
-    background-image: url("../img/two-tablet-desktop.svg");
-    background-repeat: no-repeat;
-    width: 134px;
-    height: 280px;
-    z-index: 0;
+    color: $grey;
+    font-size: 280px;
+    line-height: 280px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    top: 0;
+    right: 0;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    content: "";
-    top: 0;
-    left: 124px;
+    counter-increment: section;
+    content: counters(section, ".") "";
     position: absolute;
-    background-image: url("../img/two-tablet-desktop.svg");
-    background-repeat: no-repeat;
-    width: 134px;
-    height: 280px;
-    z-index: 0;
+    color: $grey;
+    font-size: 280px;
+    line-height: 280px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    top: 0;
+    right: 84px;
+    z-index: -1;
   }
 }
 
 .how-it-works__item--utensils::after {
   @media (min-width: $tablet-width) {
-    content: "";
-    top: 0;
-    left: 124px;
+    counter-increment: section;
+    content: counters(section, ".") "";
     position: absolute;
-    background-image: url("../img/three-tablet-desktop.svg");
-    background-repeat: no-repeat;
-    width: 134px;
-    height: 280px;
-    z-index: 0;
+    color: $grey;
+    font-size: 280px;
+    line-height: 280px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    top: 0;
+    right: 0;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    content: "";
-    top: 0;
-    left: 124px;
+    counter-increment: section;
+    content: counters(section, ".") "";
     position: absolute;
-    background-image: url("../img/three-tablet-desktop.svg");
-    background-repeat: no-repeat;
-    width: 134px;
-    height: 280px;
-    z-index: 0;
+    color: $grey;
+    font-size: 280px;
+    line-height: 280px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    top: 0;
+    right: 84px;
+    z-index: -1;
   }
 }
 
 .how-it-works__item--clock::after {
   @media (min-width: $tablet-width) {
-    content: "";
-    top: 0;
-    left: 124px;
+    counter-increment: section;
+    content: counters(section, ".") "";
     position: absolute;
-    background-image: url("../img/four-tablet-desktop.svg");
-    background-repeat: no-repeat;
-    width: 136px;
-    height: 280px;
-    z-index: 0;
+    color: $grey;
+    font-size: 280px;
+    line-height: 280px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    top: 0;
+    right: 0;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    content: "";
-    top: 0;
-    left: 124px;
+    counter-increment: section;
+    content: counters(section, ".") "";
     position: absolute;
-    background-image: url("../img/four-tablet-desktop.svg");
-    background-repeat: no-repeat;
-    width: 136px;
-    height: 280px;
-    z-index: 0;
+    color: $grey;
+    font-size: 280px;
+    line-height: 280px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    top: 0;
+    right: 84px;
+    z-index: -1;
   }
 }
