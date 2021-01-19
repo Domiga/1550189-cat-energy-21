@@ -121,7 +121,7 @@
     top: 41px;
     left: -40px;
     position: absolute;
-    background-image: url("../img/can-chikken-mobile.jpg");
+    background-image: url("../img/can-chikken-mobile.png");
     width: 280px;
     height: 270px;
   }
@@ -142,7 +142,7 @@
       top: 51px;
       left: 10px;
       position: absolute;
-      background-image: url("../img/can-chikken-tablet.jpg");
+      background-image: url("../img/can-chikken-tablet.png");
       background-repeat: no-repeat;
       width: 709px;
       height: 609px;
@@ -162,10 +162,10 @@
 
     &::after {
       content: "";
-      top: -118px;
-      left: 421px;
+      top: -183px;
+      left: 367px;
       position: absolute;
-      background-image: url("../img/can-chikken-desktop.jpg");
+      background-image: url("../img/can-chikken-desktop.png");
       background-repeat: no-repeat;
       width: 522px;
       height: 499px;
