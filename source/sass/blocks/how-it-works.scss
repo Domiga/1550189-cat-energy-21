@@ -1,17 +1,42 @@
 .how-it-works {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 27px 0 42px 0;
-  padding: 0 20px;
+  padding: 0;
   text-align: left;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
+    align-items: start;
+    z-index: 1;
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    margin: 71px auto 11px auto;
+    width: 1220px;
+    z-index: 1;
+  }
+}
+
+.how-it-works-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 633px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    margin: 71px auto 11px auto;
     width: 1220px;
   }
 }
@@ -25,20 +50,26 @@
   row-gap: 20px;
 
   @media (min-width: $tablet-width) {
+    counter-reset: section;
+    list-style-type: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
     row-gap: 23px;
+    width: 633px;
   }
 
   @media (min-width: $desktop-width) {
+    counter-reset: section;
+    list-style-type: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
+    width: 1220px;
   }
 }
 
@@ -56,12 +87,13 @@
 
 .how-it-works__title {
   color: $black;
-  background-color: $white;
   font-size: 36px;
   line-height: 40px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   margin: 0 0 36px 0;
+  text-align: left;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -74,24 +106,50 @@
   }
 }
 
+.how-it-works__title-wrapper {
+  width: 280px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 375px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 375px;
+  }
+}
+
 .how-it-works__text {
   color: $special-grey;
-  background-color: $white;
   font-size: 14px;
   line-height: 18px;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   margin: 0;
+  width: 199px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    padding: 150px 29px 57px 0;
+    padding: 150px 0 57px 0;
+    width: 246px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+.how-it-works__text--tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
   }
 }
 
@@ -100,18 +158,24 @@
   top: 0;
   left: -82px;
   position: absolute;
-  background-image: url("../../img/how-it-works-list.svg");
+  background-image: url("../img/leaf-mobile.svg");
   width: 60px;
   height: 60px;
 
   @media (min-width: $tablet-width) {
     top: 46px;
     left: 2px;
+    background-image: url("../img/leaf-tablet-desktop.svg");
+    width: 80px;
+    height: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 60px;
-    line-height: 60px;
+    top: 46px;
+    left: 2px;
+    background-image: url("../img/leaf-tablet-desktop.svg");
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -120,18 +184,24 @@
   top: 0;
   left: -82px;
   position: absolute;
-  background-image: url("../../img/how-it-works-powder.svg");
+  background-image: url("../img/powder-mobile.svg");
   width: 60px;
   height: 60px;
 
   @media (min-width: $tablet-width) {
     top: 46px;
     left: 2px;
+    background-image: url("../img/powder-tablet-desktop.svg");
+    width: 80px;
+    height: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 60px;
-    line-height: 60px;
+    top: 46px;
+    left: 2px;
+    background-image: url("../img/powder-tablet-desktop.svg");
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -140,18 +210,24 @@
   top: 0;
   left: -82px;
   position: absolute;
-  background-image: url("../../img/how-it-works-fork.svg");
+  background-image: url("../../img/utensils-mobile.svg");
   width: 60px;
   height: 60px;
 
   @media (min-width: $tablet-width) {
     top: 46px;
     left: 2px;
+    background-image: url("../img/utensils-tablet-desktop.svg");
+    width: 80px;
+    height: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 60px;
-    line-height: 60px;
+    top: 46px;
+    left: 2px;
+    background-image: url("../img/utensils-tablet-desktop.svg");
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -160,17 +236,143 @@
   top: 0;
   left: -82px;
   position: absolute;
-  background-image: url("../../img/how-it-works-clock.svg");
+  background-image: url("../img/clock-mobile.svg");
   width: 60px;
   height: 60px;
 
   @media (min-width: $tablet-width) {
     top: 46px;
     left: 2px;
+    background-image: url("../img/clock-tablet-desktop.svg");
+    width: 80px;
+    height: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 60px;
-    line-height: 60px;
+    top: 46px;
+    left: 2px;
+    background-image: url("../img/clock-tablet-desktop.svg");
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.how-it-works__item--leaf::after {
+  @media (min-width: $tablet-width) {
+    counter-increment: section;
+    content: counters(section, ".") "";
+    position: absolute;
+    color: $grey;
+    font-size: 280px;
+    line-height: 280px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    counter-increment: section;
+    content: counters(section, ".") "";
+    position: absolute;
+    color: $grey;
+    font-size: 280px;
+    line-height: 280px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    top: 0;
+    right: 84px;
+    z-index: -1;
+  }
+}
+
+.how-it-works__item--powder::after {
+  @media (min-width: $tablet-width) {
+    counter-increment: section;
+    content: counters(section, ".") "";
+    position: absolute;
+    color: $grey;
+    font-size: 280px;
+    line-height: 280px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    counter-increment: section;
+    content: counters(section, ".") "";
+    position: absolute;
+    color: $grey;
+    font-size: 280px;
+    line-height: 280px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    top: 0;
+    right: 84px;
+    z-index: -1;
+  }
+}
+
+.how-it-works__item--utensils::after {
+  @media (min-width: $tablet-width) {
+    counter-increment: section;
+    content: counters(section, ".") "";
+    position: absolute;
+    color: $grey;
+    font-size: 280px;
+    line-height: 280px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    counter-increment: section;
+    content: counters(section, ".") "";
+    position: absolute;
+    color: $grey;
+    font-size: 280px;
+    line-height: 280px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    top: 0;
+    right: 84px;
+    z-index: -1;
+  }
+}
+
+.how-it-works__item--clock::after {
+  @media (min-width: $tablet-width) {
+    counter-increment: section;
+    content: counters(section, ".") "";
+    position: absolute;
+    color: $grey;
+    font-size: 280px;
+    line-height: 280px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    counter-increment: section;
+    content: counters(section, ".") "";
+    position: absolute;
+    color: $grey;
+    font-size: 280px;
+    line-height: 280px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    top: 0;
+    right: 84px;
+    z-index: -1;
   }
 }

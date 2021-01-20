@@ -9,19 +9,23 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   text-align: start;
-  margin: 27px 0 41px 0;
+  margin: 27px auto 41px auto;
   padding: 0 20px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     padding: 0 30px;
+    width: 708px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 60px;
     line-height: 60px;
     width: 1220px;
+    padding: 0 110px;
     margin: 10px auto 84px auto;
   }
 }

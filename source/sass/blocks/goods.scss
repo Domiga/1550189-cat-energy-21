@@ -31,10 +31,14 @@
 
   @media (min-width: $tablet-width) {
     margin: auto 0;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
     margin: auto 0;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -45,14 +49,15 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    margin-bottom: 24px;
+    padding: 20px 40px 20px 40px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 36px;
     line-height: 36px;
     justify-content: space-between;
-    width: 63%;
+    width: 612px;
+    padding: 0;
   }
 }
 
@@ -85,12 +90,21 @@
   padding: 8px 110px;
   margin-bottom: 18px;
 
+  &:hover {
+    background-color: $green-hover;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $green-hover;
+    color: $white-speshial;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
-    width: 632px;
-    padding: 9px 0;
-    margin: 0 auto;
+    padding: 9px 285px;
+    margin: 0 auto 25px auto;
   }
 
   @media (min-width: $desktop-width) {
