@@ -18,15 +18,15 @@
 
 .contacts .contacts__link-icon {
   fill: $black-dark;
-  width: 128px;
+  width: 164px;
   height: 24px;
 
   &:hover {
-    opacity: 0.7;
+    opacity: 0.8;
   }
 
   &:active:focus {
-    opacity: 0.3;
+    opacity: 0.6;
   }
 }
 

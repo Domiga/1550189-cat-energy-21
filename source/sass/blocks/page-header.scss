@@ -1,6 +1,5 @@
 .page-header {
   display: flex;
-<<<<<<< HEAD
   flex-direction: column;
   background-color: $white;
   color: $black;
@@ -42,10 +41,18 @@
   }
 }
 
-.page-header__logo img {
+.page-header__logo .page-header__logo-img {
   padding-top: 11px;
   width: 191px;
   height: 38px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active:focus {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 24px;
@@ -58,13 +65,4 @@
     width: 202px;
     height: 59px;
   }
-=======
-  flex-direction: row;
-  background-color: $white;
-  color: $black;
-}
-
-.page-header__logo-img {
-  text-align: left;
->>>>>>> a6ce3ff128d987d2240f1f8a2f166619b6fb5139
 }

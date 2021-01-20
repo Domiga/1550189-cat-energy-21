@@ -31,3 +31,21 @@
     align-items: flex-end;
   }
 }
+
+.range-filter__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 583px;
+    padding: 0 98px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    gap: 24px;
+    background-color: $basic-grey-special;
+  }
+}
