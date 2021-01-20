@@ -1,5 +1,6 @@
 .page-header {
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
   background-color: $white;
   color: $black;
@@ -49,4 +50,13 @@
   @media (min-width: $desktop-width) {
     padding-top: 53px;
   }
+=======
+  flex-direction: row;
+  background-color: $white;
+  color: $black;
+}
+
+.page-header__logo-img {
+  text-align: left;
+>>>>>>> a6ce3ff128d987d2240f1f8a2f166619b6fb5139
 }

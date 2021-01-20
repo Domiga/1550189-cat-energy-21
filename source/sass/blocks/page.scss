@@ -1,10 +1,21 @@
 .page {
   height: 100%;
   font-family: "Oswald", "Arial", sans-serif;
+<<<<<<< HEAD
+=======
+  color: $white;
+>>>>>>> a6ce3ff128d987d2240f1f8a2f166619b6fb5139
 }
 
 .page__body {
   min-height: 100%;
+<<<<<<< HEAD
   margin: 0 auto;
   background-color: $white;
+=======
+  margin: 0;
+  background-color: $white;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+>>>>>>> a6ce3ff128d987d2240f1f8a2f166619b6fb5139
 }

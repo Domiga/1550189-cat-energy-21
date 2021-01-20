@@ -2,11 +2,17 @@
 @import "global/color.scss";
 @import "global/fonts.scss";
 @import "global/global.scss";
+<<<<<<< HEAD
+=======
+@import "global/mixins.scss";
+@import "global/variables.scss";
+>>>>>>> a6ce3ff128d987d2240f1f8a2f166619b6fb5139
 @import "global/viewports.scss";
 
 // Blocks
 @import "blocks/page-header.scss";
 @import "blocks/page.scss";
+<<<<<<< HEAD
 @import "blocks/functional-eat.scss";
 @import "blocks/page-main.scss";
 @import "blocks/programm-eat.scss";
@@ -36,3 +42,5 @@
 @import "blocks/invitation-catalog.scss";
 @import "blocks/form-wrapper.scss";
 @import "blocks/map.scss";
+=======
+>>>>>>> a6ce3ff128d987d2240f1f8a2f166619b6fb5139
