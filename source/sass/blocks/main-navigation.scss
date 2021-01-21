@@ -23,36 +23,12 @@
     &:hover {
       color: $white;
       opacity: 0.6;
-
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        top: 39px;
-        height: 2px;
-        background: $white;
-        opacity: 0.6;
-      }
     }
 
     @media (min-width: $desktop-width) {
       &:focus {
         background: $white;
         opacity: 0.3;
-
-        &::after {
-          content: "";
-          position: absolute;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          top: 39px;
-          height: 2px;
-          background: $white;
-          opacity: 0.3;
-        }
       }
     }
   }

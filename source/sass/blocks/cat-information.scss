@@ -74,13 +74,25 @@
 }
 
 .cat-information__entry {
+  outline: 0;
   color: $special-grey;
   font-size: 16px;
   line-height: 18px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  outline: 0;
   border: 1px solid $grey-border-light;
+
+  &:hover {
+    border: 1px solid $grey-border;
+  }
+
+  &:active:focus {
+    border: 2px solid $special-grey;
+  }
+
+  &:invalid {
+    border: 2px solid $pink-invalid;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -117,6 +129,7 @@
 }
 
 .cat-information__entry--name {
+  outline: 0;
   padding: 12px 0 13px 14px;
   margin-left: 7px;
   width: 77%;
@@ -137,6 +150,7 @@
 }
 
 .cat-information__entry--weight {
+  outline: 0;
   padding: 12px 0 13px 13px;
   margin-left: 10px;
   width: 68%;
@@ -156,6 +170,7 @@
 }
 
 .cat-information__entry--age {
+  outline: 0;
   padding: 14px 0 14px 12px;
   margin-left: 9px;
   width: 57%;

@@ -11,9 +11,51 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .contacts-form__item {
+.contacts-form__item {
+  @media (min-width: $desktop-width) {
     width: 570px;
+  }
+}
+
+.contacts-form__button--mail {
+  position: absolute;
+  background: url("../img/mail-icon.svg") no-repeat;
+  right: 18px;
+  top: 15px;
+  width: 19px;
+  height: 14px;
+  border: 0;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    right: 28px;
+    top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 28px;
+    top: 16px;
+  }
+}
+
+.contacts-form__button--phone {
+  position: absolute;
+  right: 20px;
+  top: 11px;
+  background: url("../img/phone-icon.svg") no-repeat;
+  width: 20px;
+  height: 21px;
+  border: 0;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    right: 28px;
+    top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 28px;
+    top: 16px;
   }
 }
 
@@ -116,6 +158,7 @@
 }
 
 .contacts-form__indication {
+  position: relative;
   color: $special-grey;
   font-size: 16px;
   line-height: 18px;
@@ -135,13 +178,22 @@
 }
 
 .contacts-form__entry {
+  position: relative;
   color: $special-grey;
   font-size: 16px;
   line-height: 18px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   outline: 0;
-  border: 1px solid $grey-border-light;
+  border: 1px solid $grey-border;
+
+  &:disabled {
+    border: 2px solid $grey-$special-grey;
+  }
+
+  &:invalid {
+    border: 2px solid $pink-invalid;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -176,40 +228,36 @@
 .contacts-form__entry--email {
   margin-left: 4px;
   padding: 12px 0 13px 15px;
-  width: 73%;
+  width: 202px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 4px;
+    margin-left: 17px;
     padding: 9px 6px 11px 15px;
-    width: 85%;
+    width: 528px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 30px;
-    margin-left: 20px;
+    margin-left: 17px;
     padding: 9px 6px 11px 19px;
-    width: 80%;
+    width: 459px;
   }
 }
 
 .contacts-form__entry--phone {
   margin-left: 3px;
   padding: 12px 0 13px 15px;
-  width: 67%;
+  width: 187px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 4px;
+    margin-left: 12px;
     padding: 9px 10px 11px 15px;
-    width: 81%;
+    width: 508px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 30px;
-    margin-left: 20px;
+    margin-left: 10px;
     padding: 9px 7px 11px 19px;
-    width: 76%;
+    width: 444px;
   }
 }
 
