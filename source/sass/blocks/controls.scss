@@ -1,14 +1,64 @@
 .controls {
+  position: relative;
   width: 82px;
   height: 12px;
   border: 1px solid $grey-border;
   border-radius: 6px;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 4px;
+    background-color: $grey-line;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 428px;
+    height: 4px;
+    background-color: $grey-line;
+  }
 }
 
 .controls__scale {
+  outline: none;
+  position: absolute;
+  top: 3px;
+  left: 5px;
   width: 35px;
   height: 6px;
-  background-color: $green;
-  border-radius: 6px;
+  background-image: url("../img/scale-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -17px;
+    left: 205px;
+    width: 34px;
+    height: 34px;
+    background-image: url("../img/scale.svg");
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    &:hover {
+      background-image: url("../img/scale-hover.svg");
+    }
+
+    &:focus {
+      background-image: url("../img/scale-focus.svg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -17px;
+    left: 205px;
+    width: 34px;
+    height: 34px;
+    background-image: url("../img/scale.svg");
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }

@@ -120,10 +120,10 @@
                         <h2 class="programm-eat__title programm-eat__title--sfinks">
                             Похудение
                         </h2>
-                        <p class="programm-eat__text programm-eat--border">
+                        <p class="programm-eat__text programm-eat__text--border">
                             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
                         </p>
-                        <a class="programm-eat__link" href="#">
+                        <a class="programm-eat__link programm-eat__link--slim" href="#">
                             каталог slim
                         </a>
                     </li>
@@ -131,10 +131,10 @@
                         <h2 class="programm-eat__title programm-eat__title--tiger">
                             Набор массы
                         </h2>
-                        <p class="programm-eat__text programm-eat--border programm-eat--tiger">
+                        <p class="programm-eat__text programm-eat__text--border programm-eat__text--tiger">
                             Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
                         </p>
-                        <a class="programm-eat__link" href="#">
+                        <a class="programm-eat__link programm-eat__link--pro" href="#">
                             каталог pro
                         </a>
                     </li>
@@ -179,47 +179,63 @@
                     <div class="living-example__title-wrapper">
                         <h2 class="living-example__title">Живой пример</h2>
                     </div>
+                    <div class="living-example__wraper-block">
                     <div class="living-example__wrap-content">
-                        <div class="living-example__wrap-content-inside">
-                            <div class="living-example__wrapper-content">
-                                <p class="living-example__text">
-                                    Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в
-                                    день.
-                                </p>
+                        <div class="living-example__wrapper-content">
+                            <p class="living-example__text">
+                                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+                            </p>
 
-                                <div class="living-example__wrapper-list">
-                                    <dl class="living-example__list">
-                                        <div class="living-example__wrapper-block">
-                                            <dt class="living-example__heading">5 кг</dt>
-                                            <dd class="living-example__description">
-                                                снижение веса
-                                            </dd>
-                                        </div>
-                                        <div class="living-example__wrapper-block">
-                                            <dt class="living-example__heading">60 дней</dt>
-                                            <dd class="living-example__description">
-                                                затрачено времени
-                                            </dd>
-                                        </div>
-                                    </dl>
-                                    <div class="living-example__text-wrapper">
-                                        <p class="living-example__text-discription">затраты на питание:</p>
-                                        <p class="living-example__text-cost">15000 руб.</p>
+                            <div class="living-example__wrapper-list">
+                                <dl class="living-example__list">
+                                    <div class="living-example__wrapper-block">
+                                        <dt class="living-example__heading">5 кг</dt>
+                                        <dd class="living-example__description">
+                                            снижение веса
+                                        </dd>
                                     </div>
+                                    <div class="living-example__wrapper-block">
+                                        <dt class="living-example__heading">60 дней</dt>
+                                        <dd class="living-example__description">
+                                            затрачено времени
+                                        </dd>
+                                    </div>
+                                </dl>
+                                <div class="living-example__text-wrapper">
+                                    <p class="living-example__text-discription">затраты на питание:</p>
+                                    <p class="living-example__text-cost">15000 руб.</p>
                                 </div>
                             </div>
+                        </div>
 
+                        <div class="living-example__wrapper-before">
                             <div class="range-filter">
+                                <div class="living-example__before">
+                                    <picture>
+                                        <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop.webp 1x, img/before-desktop@2x.webp 2x" />
+                                        <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet.webp 1x, img/before-tablet@2x.webp 2x" />
+                                        <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x" />
+
+                                        <source media="(min-width: 1440px)" srcset="img/before-desktop.png 1x, img/before-desktop@2.png 2x" />
+                                        <source media="(min-width: 768px)" srcset="img/before-tablet.png 1x, img/before-tablet@2.png 2x" />
+                                        <img class="living-example__before-img" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="Фто кота до правильного курса питания" />
+                                    </picture>
+                                </div>
                                 <div class="range-filter__wrapper">
-                                    <p class="range-filter__text">было</p>
+                                    <button type="button" class="range-filter__button" aria-label="Было">
+                                      было
+                                    </button>
                                     <div class="range-filter__controls controls">
                                         <div class="controls__scale"></div>
                                     </div>
                                     <div class="range-filter__toggle"></div>
-                                    <p class="range-filter__text">стало</p>
+                                    <button type="button" class="range-filter__button" aria-label="Стало">
+                                      стало
+                                    </button>
                                 </div>
                             </div>
                         </div>
+                    </div>
                     </div>
                 </div>
             </section>

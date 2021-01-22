@@ -1,21 +1,25 @@
 .range-filter {
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
 
   @media (min-width: $tablet-width) {
     background-color: $basic-grey;
+    height: 462px;
+    width: 768px;
+    margin: 0 auto;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
     gap: 24px;
-    background-color: $basic-grey-special;
+    background-color: transparent;
   }
 }
 
-.range-filter__text {
+.range-filter__button {
   text-align: center;
   color: $black;
   font-size: 16px;
@@ -23,12 +27,36 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  outline: 0;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px dotted $pink-disabled;
+
+    &:hover {
+      border-bottom: 1px solid $black-focus;
+    }
+
+    &:focus {
+      border-bottom: none;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
+
+    &:hover {
+      border-bottom: 1px solid $black-focus;
+    }
+
+    &:focus {
+      border-bottom: none;
+    }
   }
 }
 
@@ -36,16 +64,21 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  width: 228px;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
-    width: 583px;
-    padding: 0 98px;
+    width: 571px;
+    padding: 0 98px 41px 98px;
     margin: 0 auto;
+    z-index: 2;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
     gap: 24px;
     background-color: $basic-grey-special;
+    z-index: 2;
   }
 }

@@ -42,7 +42,7 @@
             </symbol>
         </svg>
         <header class="page-header">
-            <a class="page-header__logo" href="#">
+            <a class="page-header__logo" href="index.html">
                 <picture>
                     <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" />
                     <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
@@ -50,7 +50,7 @@
                 </picture>
             </a>
             <nav class="main-navigation main-navigation--closed main-navigation--nojs">
-                <button class="main-navigation__toggle" type="button">
+                <button class="main-navigation__toggle" type="button" aria-label="Открыть меню">
                     <span class="visually-hidden">Открыть меню</span>
                 </button>
                 <div class="main-navigation__wrapper">
@@ -104,19 +104,19 @@
                             <li class="cat-information__item">
                                 <label class="cat-information__indication">
                                     ИМЯ:*
-                                    <input class="cat-information__entry cat-information__entry--name" type="text" name="name" placeholder="Барсик" />
+                                    <input class="cat-information__entry cat-information__entry--name" type="text" name="Имя" placeholder="Барсик" required/>
                                 </label>
                             </li>
                             <li class="cat-information__item">
                                 <label class="cat-information__indication">
                                     Вес (кг):*
-                                    <input class="cat-information__entry cat-information__entry--weight" type="text" name="weight" placeholder="7" />
+                                    <input class="cat-information__entry cat-information__entry--weight" type="text" name="Вес" placeholder="7" required/>
                                 </label>
                             </li>
                             <li class="cat-information__item">
                                 <label class="cat-information__indication">
                                     Возраст (лет):
-                                    <input class="cat-information__entry cat-information__entry--age" type="text" name="age" placeholder="7" />
+                                    <input class="cat-information__entry cat-information__entry--age" type="text" name="Возраст" placeholder="7" required/>
                                 </label>
                             </li>
                         </ul>
@@ -128,21 +128,21 @@
                             <li class="choice-selection__item">
                                 <label class="choice-selection__indication">
                                     похудение
-                                    <input class="choice-selection__entry visually-hidden" type="checkbox" name="losing-weight" checked />
+                                    <input class="choice-selection__entry visually-hidden" type="checkbox" name="Похудение" checked />
                                     <span class="choice-selection__check-box choice-selection__check-box--checked"></span>
                                 </label>
                             </li>
                             <li class="choice-selection__item">
                                 <label class="choice-selection__indication">
                                     Набор массы
-                                    <input class="choice-selection__entry visually-hidden" type="checkbox" name="mass" />
+                                    <input class="choice-selection__entry visually-hidden" type="checkbox" name="Набор массы" />
                                     <span class="choice-selection__check-box"></span>
                                 </label>
                             </li>
                             <li class="choice-selection__item">
                                 <label class="choice-selection__indication">
                                     Не знаю (Нужен ваш совет)
-                                    <input class="choice-selection__entry visually-hidden" type="checkbox" name="advice" />
+                                    <input class="choice-selection__entry visually-hidden" type="checkbox" name="Не знаю (Нужен ваш совет)" />
                                     <span class="choice-selection__check-box"></span>
                                 </label>
                             </li>
@@ -151,23 +151,26 @@
                 </div>
 
                 <fieldset class="content-form__information contacts-form">
-                    <div class="contacts-form__title-wrapper">
-                        <legend class="contacts-form__title">
-                            Контактные данные (владельца кота)
+                        <legend class="contacts-form__title-wrapper">
+                          <div class="contacts-form__title-wrap">
+                            <h3 class="contacts-form__title">
+                              Контактные данные (владельца кота)
+                            </h3>
+                          </div>
                         </legend>
-                    </div>
                     <ul class="contacts-form__items">
                         <li class="contacts-form__item">
                             <label class="contacts-form__indication">
                                 E-mail:*
-                                <input class="contacts-form__entry contacts-form__entry--email" type="text" name="e-mail" placeholder="кuklachev@gmail.com" />
+                                <input class="contacts-form__entry contacts-form__entry--email" type="text" name="e-mail" placeholder="кuklachev@gmail.com" required/>
+                                <button class="contacts-form__button contacts-form__button--mail" type="button" aria-label="E-mail"></button>
                             </label>
                             <button class="contacts-form__button contacts-form__button--mail" type="button" aria-label="E-mail"></button>
                         </li>
                         <li class="contacts-form__item">
                             <label class="contacts-form__indication">
                                 Телефон:*
-                                <input class="contacts-form__entry contacts-form__entry--phone" type="text" name="phone" placeholder="8 (960) 900-60-90" />
+                                <input class="contacts-form__entry contacts-form__entry--phone" type="text" name="phone" placeholder="8 (960) 900-60-90" required/>
                             </label>
                             <button class="contacts-form__button contacts-form__button--phone" type="button" aria-label="Phone"></button>
                         </li>
@@ -175,9 +178,15 @@
                 </fieldset>
 
                 <fieldset class="content-form__information comment">
-                    <div class="comment__title-wrapper">
-                        <legend class="comment__title">Комментарий</legend>
-                    </div>
+
+                        <legend class="comment__title-wrapper">
+                          <div class="comment__title-wrap">
+                            <h3 class="comment__title">
+                              Комментарий
+                            </h3>
+                          </div>
+                        </legend>
+
                     <div class="comment__indication-wrapper">
                         <label class="comment__indication">
                             <textarea class="comment__entry" name="discription" maxlength="280" placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -186,42 +195,46 @@
                 </fieldset>
 
                 <fieldset class="content-form__information additionally">
-                    <div class="additionally__title-wrapper">
-                        <legend class="additionally__title">Дополнительно</legend>
-                    </div>
+                        <legend class="additionally__title-wrapper">
+                          <div class="additionally__title-wrap">
+                            <h3 class="additionally__title">
+                              Дополнительно
+                            </h3>
+                          </div>
+                        </legend>
                     <div class="additionally__wrapper-content">
                         <ul class="additionally__list">
                             <li class="additionally__item">
                                 <label class="additionally__indication">
                                     сахарозаменитель
-                                    <input class="additionally__entry visually-hidden" type="checkbox" name="sweetener" checked />
-                                    <span class="additionally__check-box additionally__check-box--checked"></span>
+                                    <input class="additionally__entry visually-hidden" type="checkbox" name="Сахарозаменитель" checked />
+                                    <span class="additionally__check-box"></span>
                                 </label>
                             </li>
                             <li class="additionally__item">
                                 <label class="additionally__indication">
                                     питьевая вода
-                                    <input class="additionally__entry visually-hidden" type="checkbox" name="water" />
+                                    <input class="additionally__entry visually-hidden" type="checkbox" name="Вода" />
                                     <span class="additionally__check-box"></span>
                                 </label>
                             </li>
                             <li class="additionally__item">
                                 <label class="additionally__indication">
                                     молоко
-                                    <input class="additionally__entry visually-hidden" type="checkbox" name="milk" />
+                                    <input class="additionally__entry visually-hidden" type="checkbox" name="Молоко" />
                                     <span class="additionally__check-box"></span>
                                 </label>
                             </li>
                             <li class="additionally__item">
                                 <label class="additionally__indication">
                                     витамины
-                                    <input class="additionally__entry visually-hidden" type="checkbox" name="vitamins" />
+                                    <input class="additionally__entry visually-hidden" type="checkbox" name="Витамины" />
                                     <span class="additionally__check-box"></span>
                                 </label>
                             </li>
                         </ul>
                         <div class="additionally__wrapper-foter">
-                            <button class="additionally__button" type="submit">Отправить заявку</button>
+                            <button class="additionally__button" type="submit" aria-label="Отправить заявку">Отправить заявку</button>
                             <p class="additionally__legend">
                                 * &mdash; Обязательные поля
                             </p>
