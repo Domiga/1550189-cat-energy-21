@@ -214,6 +214,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .living-example__heading {
@@ -245,6 +246,7 @@
 }
 
 .living-example__description {
+  position: absolute;
   text-align: center;
   color: $special-grey;
   background-color: $basic-grey;
@@ -253,14 +255,17 @@
   line-height: 12px;
   font-family: "Arial", sans-serif;
   font-weight: 400;
-  margin: -11px 0 0 18px;
   width: 87px;
+  top: 50px;
+  left: 60px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
     background-color: $white;
     margin: -11px 0 0 35px;
+    top: 50px;
+    left: 60px;
   }
 
   @media (min-width: $desktop-width) {

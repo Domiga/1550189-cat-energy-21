@@ -47,6 +47,11 @@
       background-image: url("../img/background-img-desktop.jpg");
       background-repeat: no-repeat;
       z-index: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background-img-desktop.jpg");
+        background-size: 720px auto;
+      }
     }
   }
 }

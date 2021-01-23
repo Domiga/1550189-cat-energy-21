@@ -25,6 +25,7 @@
   }
 }
 
+/*
 .contacts-form__button--mail {
   outline: 0;
   position: absolute;
@@ -54,36 +55,7 @@
     top: 16px;
   }
 }
-
-.contacts-form__button--phone {
-  outline: 0;
-  position: absolute;
-  right: 20px;
-  top: 11px;
-  background: url("../img/phone-icon.svg") no-repeat;
-  width: 20px;
-  height: 21px;
-  border: 0;
-  cursor: pointer;
-
-  &:disabled {
-    fill: $green;
-  }
-
-  &:invalid {
-    fill: $pink-invalid;
-  }
-
-  @media (min-width: $tablet-width) {
-    right: 28px;
-    top: 16px;
-  }
-
-  @media (min-width: $desktop-width) {
-    right: 28px;
-    top: 16px;
-  }
-}
+*/
 
 .contacts-form__items {
   display: flex;
@@ -224,21 +196,14 @@
 
 .contacts-form__entry {
   position: relative;
-  color: $grey-border;
+  color: $special-grey;
   font-size: 16px;
   line-height: 18px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   outline: 0;
   border: 1px solid $grey-border;
-
-  &:disabled {
-    border: 2px solid $special-grey;
-  }
-
-  &:invalid {
-    border: 2px solid $pink-invalid;
-  }
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -271,11 +236,20 @@
 }
 
 .contacts-form__entry--email {
+  position: relative;
   margin-left: 4px;
   padding: 12px 0 13px 15px;
   width: 202px;
 
+  &:focus:active {
+    border: 2px solid $special-grey;
+    margin-left: 7px;
+    padding: 12px 0 11px 13px;
+    width: 202px;
+  }
+
   &:invalid {
+    border: 2px solid $pink-invalid;
     margin-left: 7px;
     padding: 12px 0 11px 13px;
     width: 202px;
@@ -283,8 +257,14 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 17px;
-    padding: 9px 6px 11px 15px;
+    padding: 10px 6px 10px 15px;
     width: 528px;
+
+    &:focus:active {
+      margin-left: 17px;
+      padding: 10px 0 8px 13px;
+      width: 534px;
+    }
 
     &:invalid {
       margin-left: 17px;
@@ -298,6 +278,12 @@
     padding: 9px 6px 11px 19px;
     width: 459px;
 
+    &:focus:active {
+      margin-left: 17px;
+      padding: 9px 0 9px 13px;
+      width: 469px;
+    }
+
     &:invalid {
       margin-left: 17px;
       padding: 9px 0 9px 13px;
@@ -306,21 +292,67 @@
   }
 }
 
+.contacts-form__icon-mail {
+  position: absolute;
+  fill: none;
+  stroke: $black-light;
+  outline: 0;
+  border: none;
+  top: 15px;
+  right: 13px;
+  width: 19px;
+  height: 14px;
+
+  @media (min-width: $tablet-width) {
+    top: 17px;
+    right: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 19px;
+    right: 20px;
+  }
+}
+
+.contacts-form__entry--email:focus:active + .contacts-form__icon-mail {
+  stroke: $green;
+}
+
+.contacts-form__entry--email:invalid + .contacts-form__icon-mail {
+  stroke: $pink-invalid;
+}
+
 .contacts-form__entry--phone {
   margin-left: 3px;
   padding: 12px 0 13px 15px;
   width: 187px;
 
+  &:focus:active {
+    border: 2px solid $special-grey;
+    margin-left: 5px;
+    padding: 12px 0 11px 13px;
+    width: 187px;
+    fill: $green;
+  }
+
   &:invalid {
+    border: 2px solid $pink-invalid;
     margin-left: 5px;
     padding: 12px 0 11px 9px;
     width: 191px;
+    fill: $pink-invalid;
   }
 
   @media (min-width: $tablet-width) {
     margin-left: 12px;
     padding: 9px 10px 11px 15px;
     width: 508px;
+
+    &:focus:active {
+      margin-left: 12px;
+      padding: 9px 0 9px 13px;
+      width: 518px;
+    }
 
     &:invalid {
       margin-left: 12px;
@@ -334,12 +366,55 @@
     padding: 9px 7px 11px 19px;
     width: 444px;
 
+    &:focus:active {
+      margin-left: 10px;
+      padding: 9px 0 9px 13px;
+      width: 455px;
+    }
+
     &:invalid {
       margin-left: 10px;
       padding: 9px 0 9px 13px;
       width: 455px;
     }
   }
+}
+
+.contacts-form__icon-phone {
+  position: absolute;
+  fill: $black;
+  outline: 0;
+  border: none;
+  top: 15px;
+  right: 13px;
+  width: 20px;
+  height: 21px;
+
+  &:focus:active {
+    fill: $green;
+  }
+
+  &:invalid {
+    fill: $pink-invalid;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 15px;
+    right: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 15px;
+    right: 16px;
+  }
+}
+
+.contacts-form__entry--phone:focus:active + .contacts-form__icon-phone {
+  fill: $green;
+}
+
+.contacts-form__entry--phone:invalid + .contacts-form__icon-phone {
+  fill: $pink-invalid;
 }
 
 .contacts-form__item:not(:last-child) {

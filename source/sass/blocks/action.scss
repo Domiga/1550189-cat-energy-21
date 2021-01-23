@@ -78,6 +78,11 @@
   height: 289px;
   width: 280px;
 
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-background-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     flex-direction: row-reverse;
     align-items: center;
@@ -85,6 +90,11 @@
     background-repeat: no-repeat;
     height: 200px;
     width: 708px;
+
+    @media (min-width: $tablets) and (min-resolution: $retina-dpi),
+      (min-width: $tablets) and (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-background-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -96,5 +106,10 @@
     width: 245px;
     margin: 0 auto;
     padding: 0;
+
+    @media (min-width: $desktops) and (min-resolution: $retina-dpi),
+      (min-width: $desktops) and (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-background-desktop@2x.jpg");
+    }
   }
 }

@@ -43,7 +43,7 @@
         </svg>
 
         <header class="page-header">
-            <a class="page-header__logo" href="#">
+            <a class="page-header__logo">
                 <picture>
                     <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" />
                     <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
@@ -75,23 +75,6 @@
                 </div>
             </nav>
         </header>
-
-        <script>
-            var navMain = document.querySelector(".main-navigation");
-            var navToggle = document.querySelector(".main-navigation__toggle");
-
-            navMain.classList.remove("main-navigation--nojs");
-
-            navToggle.addEventListener("click", function () {
-                if (navMain.classList.contains("main-navigation--closed")) {
-                    navMain.classList.remove("main-navigation--closed");
-                    navMain.classList.add("main-navigation--opened");
-                } else {
-                    navMain.classList.add("main-navigation--closed");
-                    navMain.classList.remove("main-navigation--opened");
-                }
-            });
-        </script>
 
         <main class="page-main">
             <h1 class="visually-hidden">
@@ -189,15 +172,15 @@
                             <div class="living-example__wrapper-list">
                                 <dl class="living-example__list">
                                     <div class="living-example__wrapper-block">
-                                        <dt class="living-example__heading">5 кг</dt>
-                                        <dd class="living-example__description">
-                                            снижение веса
+                                        <dt class="living-example__description living-example__description--veight">снижение веса</dt>
+                                        <dd class="living-example__heading">
+                                            5 кг
                                         </dd>
                                     </div>
                                     <div class="living-example__wrapper-block">
-                                        <dt class="living-example__heading">60 дней</dt>
-                                        <dd class="living-example__description">
-                                            затрачено времени
+                                        <dt class="living-example__description living-example__description--time">затрачено времени</dt>
+                                        <dd class="living-example__heading">
+                                            60 дней
                                         </dd>
                                     </div>
                                 </dl>
@@ -222,14 +205,14 @@
                                     </picture>
                                 </div>
                                 <div class="range-filter__wrapper">
-                                    <button type="button" class="range-filter__button" aria-label="Было">
+                                    <button type="button" class="range-filter__button">
                                       было
                                     </button>
                                     <div class="range-filter__controls controls">
-                                        <div class="controls__scale"></div>
+                                      <button class="controls__scale"></button>
                                     </div>
                                     <div class="range-filter__toggle"></div>
-                                    <button type="button" class="range-filter__button" aria-label="Стало">
+                                    <button type="button" class="range-filter__button">
                                       стало
                                     </button>
                                 </div>
@@ -260,7 +243,7 @@
                     </h2>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.4063378774833!2d30.329370056308434!3d59.937895630660215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310edbef855b%3A0xee3abe449bc142d7!2z0JzQuNGF0LDQudC70L7QstGB0LrQuNC5INGC0LXQsNGC0YA!5e0!3m2!1sru!2sru!4v1605283474130!5m2!1sru!2sru"
-                        width="100%"
+                        width="100"
                         height="362"
                         style="border: 0;"
                         allowfullscreen=""
