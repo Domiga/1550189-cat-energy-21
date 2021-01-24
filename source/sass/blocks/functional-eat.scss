@@ -4,7 +4,7 @@
   padding: 0;
   height: 480px;
   gap: 151px;
-  margin: 0 auto;
+  margin: -1px auto 0 auto;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
@@ -13,6 +13,7 @@
     min-height: 810px;
     gap: 61px;
     width: 708px;
+    margin: 40px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,7 +22,7 @@
     align-items: start;
     width: 1220px;
     margin: auto;
-    min-height: 694px;
+    min-height: 598px;
     padding: 0 110px;
   }
 }
@@ -48,27 +49,30 @@
     background-image: none;
     height: 181px;
     width: 520px;
+    padding: 0 0 0 1px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 0 0 80px;
     align-items: start;
+    margin: 46px 0 0 0;
   }
 }
 
 .functional-eat__button-wrapper {
   padding: 0 20px;
+  margin-top: -6px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px 0 87px;
+    padding: 0 32px 0 82px;
     z-index: 1;
     text-align: start;
-    margin-top: 17px;
+    margin-top: 4px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 0 0 80px;
-    margin: 52px 0 0 0;
+    margin: 5px 0 0 0;
   }
 }
 
@@ -81,6 +85,7 @@
   font-weight: 400;
   margin: 0;
   width: 249px;
+  padding: 27px 0 0 0;
 
   @media (min-width: $tablet-width) {
     text-align: start;
@@ -114,11 +119,11 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 25px 0 0 0;
+  margin: 25px 2px 0 0;
 
   &::after {
     content: "";
-    top: 41px;
+    top: 43px;
     left: -40px;
     position: absolute;
     background-image: url("../img/can-chikken-mobile.png");
@@ -139,8 +144,8 @@
 
     &::after {
       content: "";
-      top: 51px;
-      left: 10px;
+      top: 40px;
+      left: -2px;
       position: absolute;
       background-image: url("../img/can-chikken-tablet.png");
       background-repeat: no-repeat;
@@ -162,8 +167,8 @@
 
     &::after {
       content: "";
-      top: -183px;
-      left: 367px;
+      top: -243px;
+      left: 368px;
       position: absolute;
       background-image: url("../img/can-chikken-desktop.png");
       background-repeat: no-repeat;
@@ -184,7 +189,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   background-color: $green;
-  padding: 10px 73px;
+  padding: 9px 73px 10px 73px;
 
   &:hover {
     background-color: $green-hover;
@@ -205,7 +210,7 @@
     font-weight: 400;
     margin: 41px 0 0 0;
     z-index: 1;
-    padding: 12px 26px;
+    padding: 12px 27px 13px 26px;
   }
 
   @media (min-width: $desktop-width) {

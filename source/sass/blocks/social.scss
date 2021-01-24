@@ -1,5 +1,23 @@
+.social__item {
+  margin: 0 38px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
 .social__item:not(:last-child) {
-  margin: 0 33px 0 0;
+  @media (min-width: $tablet-width) {
+    margin-right: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 27px;
+  }
 }
 
 .social__link--vkontakte .social__link-icon {
@@ -33,8 +51,8 @@
 }
 
 .social__link--facebook .social__link-icon {
-  width: 10px;
-  height: 18px;
+  width: 12px;
+  height: 22px;
   stroke: $grey-icon;
   fill: none;
 
@@ -48,13 +66,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 13px;
-    height: 27px;
+    width: 18px;
+    height: 28px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 13px;
-    height: 27px;
+    width: 18px;
+    height: 28px;
   }
 }
 

@@ -8,18 +8,20 @@
   background-color: $white;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    padding: 0 30px 24px 30px;
     align-items: start;
     z-index: 1;
     width: 708px;
     margin: 0 auto;
+    border-bottom: 1px solid $special-grey-border-nav;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 110px;
-    margin: 71px auto 11px auto;
+    margin: 28px auto 11px auto;
     width: 1220px;
     z-index: 1;
+    border-bottom: none;
   }
 }
 
@@ -33,6 +35,7 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     width: 633px;
+    margin: 45px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,7 +50,7 @@
   list-style: none;
   padding-left: 80px;
   margin: 0;
-  row-gap: 20px;
+  row-gap: 26px;
 
   @media (min-width: $tablet-width) {
     counter-reset: section;
@@ -75,14 +78,6 @@
 
 .how-it-works__item {
   position: relative;
-
-  @media (min-width: $tablet-width) {
-    width: 34%;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 25%;
-  }
 }
 
 .how-it-works__title {
@@ -91,7 +86,7 @@
   line-height: 40px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  margin: 0 0 36px 0;
+  margin: 0 0 40px 0;
   text-align: left;
   padding: 0;
 
@@ -131,13 +126,14 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    padding: 150px 0 57px 0;
+    padding: 144px 0 78px 0;
     width: 246px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 24px;
+    padding: 143px 0 78px 0;
   }
 }
 
@@ -153,103 +149,146 @@
   }
 }
 
+.how-it-works__item--leaf {
+  @media (min-width: $tablet-width) {
+    width: 230px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
+  }
+}
+
 .how-it-works__item--leaf::before {
   content: "";
-  top: 0;
-  left: -82px;
+  top: -2px;
+  left: -80px;
   position: absolute;
   background-image: url("../img/leaf-mobile.svg");
   width: 60px;
   height: 60px;
 
   @media (min-width: $tablet-width) {
-    top: 46px;
-    left: 2px;
+    top: 32px;
+    left: -1px;
     background-image: url("../img/leaf-tablet-desktop.svg");
     width: 80px;
     height: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 46px;
-    left: 2px;
+    top: 31px;
+    left: 0;
     background-image: url("../img/leaf-tablet-desktop.svg");
     width: 80px;
     height: 80px;
   }
 }
 
+.how-it-works__item--powder {
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 246px;
+    margin: 0 0 0 18px;
+  }
+}
+
 .how-it-works__item--powder::before {
   content: "";
-  top: 0;
-  left: -82px;
+  top: -2px;
+  left: -80px;
   position: absolute;
   background-image: url("../img/powder-mobile.svg");
   width: 60px;
   height: 60px;
 
   @media (min-width: $tablet-width) {
-    top: 46px;
-    left: 2px;
+    top: 32px;
+    left: 0;
     background-image: url("../img/powder-tablet-desktop.svg");
     width: 80px;
     height: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 46px;
-    left: 2px;
+    top: 31px;
+    left: 1px;
     background-image: url("../img/powder-tablet-desktop.svg");
     width: 80px;
     height: 80px;
   }
 }
 
+.how-it-works__item--utensils {
+  @media (min-width: $tablet-width) {
+    width: 247px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 248px;
+    margin: 0 0 0 4px;
+  }
+}
+
 .how-it-works__item--utensils::before {
   content: "";
-  top: 0;
-  left: -82px;
+  top: -2px;
+  left: -80px;
   position: absolute;
   background-image: url("../../img/utensils-mobile.svg");
   width: 60px;
   height: 60px;
 
   @media (min-width: $tablet-width) {
-    top: 46px;
-    left: 2px;
+    top: 31px;
+    left: -1px;
     background-image: url("../img/utensils-tablet-desktop.svg");
     width: 80px;
     height: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 46px;
-    left: 2px;
+    top: 31px;
+    left: 1px;
     background-image: url("../img/utensils-tablet-desktop.svg");
     width: 80px;
     height: 80px;
   }
 }
 
+.how-it-works__item--clock {
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
+    margin: 0 -3px 0 0;
+  }
+}
+
 .how-it-works__item--clock::before {
   content: "";
-  top: 0;
-  left: -82px;
+  top: -2px;
+  left: -80px;
   position: absolute;
   background-image: url("../img/clock-mobile.svg");
   width: 60px;
   height: 60px;
 
   @media (min-width: $tablet-width) {
-    top: 46px;
-    left: 2px;
+    top: 31px;
+    left: -1px;
     background-image: url("../img/clock-tablet-desktop.svg");
     width: 80px;
     height: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 46px;
+    top: 31px;
     left: 2px;
     background-image: url("../img/clock-tablet-desktop.svg");
     width: 80px;
@@ -267,8 +306,8 @@
     line-height: 280px;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
-    top: 0;
-    right: 0;
+    top: -9px;
+    right: 1px;
     z-index: -1;
   }
 
@@ -281,8 +320,8 @@
     line-height: 280px;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
-    top: 0;
-    right: 84px;
+    top: -9px;
+    right: 1px;
     z-index: -1;
   }
 }
@@ -297,8 +336,8 @@
     line-height: 280px;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
-    top: 0;
-    right: 0;
+    top: -8px;
+    right: 4px;
     z-index: -1;
   }
 
@@ -311,8 +350,8 @@
     line-height: 280px;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
-    top: 0;
-    right: 84px;
+    top: -9px;
+    right: 1px;
     z-index: -1;
   }
 }
@@ -327,7 +366,7 @@
     line-height: 280px;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
-    top: 0;
+    top: -7px;
     right: 0;
     z-index: -1;
   }
@@ -341,8 +380,8 @@
     line-height: 280px;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
-    top: 0;
-    right: 84px;
+    top: -9px;
+    right: 1px;
     z-index: -1;
   }
 }
@@ -357,7 +396,7 @@
     line-height: 280px;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
-    top: 0;
+    top: -9px;
     right: 0;
     z-index: -1;
   }
@@ -371,8 +410,8 @@
     line-height: 280px;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
-    top: 0;
-    right: 84px;
+    top: -9px;
+    right: -1px;
     z-index: -1;
   }
 }
