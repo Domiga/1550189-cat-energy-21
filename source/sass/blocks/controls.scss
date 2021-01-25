@@ -45,14 +45,14 @@
 
     &:hover {
       background-image: url("../img/scale-hover.svg");
-      top: -17px;
-      left: 202px;
+      top: -16px;
+      left: 195px;
     }
 
     &:focus {
       background-image: url("../img/scale-focus.svg");
-      top: -17px;
-      left: 202px;
+      top: -16px;
+      left: 194px;
     }
   }
 
@@ -66,5 +66,15 @@
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: 0 0;
+
+    &:hover {
+      top: -17px;
+      left: 193px;
+    }
+
+    &:focus {
+      top: -17px;
+      left: 193px;
+    }
   }
 }
