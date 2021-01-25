@@ -8,12 +8,12 @@
   list-style: none;
   padding: 0 20px;
   width: 280px;
-  margin: 0 auto;
+  margin: 0 auto 22px auto;
 
   @media (min-width: $tablet-width) {
-    padding: 0 69px;
+    padding: 0 67px 0 70px;
     width: 630px;
-    margin: 0 auto;
+    margin: 0 auto 23px auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,7 +39,7 @@
     padding: 0;
     font-size: 20px;
     line-height: 30px;
-    margin: 0 0 60px 0;
+    margin: 0 0 65px 0;
     width: 323px;
   }
 
@@ -61,7 +61,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 0 0 0 1px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -141,9 +141,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 9px 0 11px 14px;
-    margin-left: 11px;
-    width: 551px;
+    padding: 9px 6px 11px 18px;
+    margin-left: 12px;
+    width: 539px;
 
     &:active:focus {
       margin-left: 11px;
@@ -182,9 +182,9 @@
 
 .cat-information__entry--weight {
   outline: 0;
-  padding: 12px 0 13px 13px;
+  padding: 12px 0 13px 14px;
   margin-left: 12px;
-  width: 189px;
+  width: 188px;
 
   &:hover {
     border: 1px solid $grey-border;
@@ -203,9 +203,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 9px 4px 11px 14px;
+    padding: 9px 4px 11px 18px;
     margin-left: 14px;
-    width: 516px;
+    width: 511px;
 
     &:active:focus {
       margin-left: 14px;
@@ -243,9 +243,9 @@
 
 .cat-information__entry--age {
   outline: 0;
-  padding: 13px 0 12px 12px;
+  padding: 13px 0 12px 14px;
   margin-left: 11px;
-  width: 158px;
+  width: 156px;
 
   &:hover {
     border: 1px solid $grey-border;
@@ -264,9 +264,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 9px 6px 11px 14px;
+    padding: 9px 6px 11px 18px;
     margin-left: 12px;
-    width: 475px;
+    width: 470px;
 
     &:active:focus {
       margin-left: 14px;
@@ -282,11 +282,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 5px 10px 19px;
+    padding: 10px 5px 10px 16px;
     font-size: 20px;
     line-height: 30px;
     margin-left: 13px;
-    width: 410px;
+    width: 413px;
 
     &:active:focus {
       margin-left: 13px;
@@ -304,6 +304,10 @@
 
 .cat-information__item:not(:last-child) {
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 20px;

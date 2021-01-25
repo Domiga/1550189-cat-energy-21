@@ -1,6 +1,6 @@
 .contacts__link {
   border-bottom: 1px solid $grey-border-bottom;
-  padding: 34px 0 26px 0;
+  padding: 39px 0 26px 0;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -32,13 +32,13 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: -20px;
+    top: -14px;
     left: -18px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: -17px;
+    top: -12px;
     left: -18px;
   }
 }
@@ -55,12 +55,12 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    padding: 19px 0 35px 146px;
+    padding: 32px 0 35px 146px;
   }
 
   @media (min-width: $desktop-width) {
     border-bottom: none;
-    padding: 19px 0 28px 149px;
+    padding: 27px 0 28px 149px;
   }
 }
 
@@ -87,14 +87,14 @@
   @media (min-width: $tablet-width) {
     width: 163px;
     height: 34px;
-    padding: 1px 0 20px 0;
+    padding: 0 0 8px 0;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 163px;
     height: 34px;
-    padding: 0 0 10px 0;
+    padding: 0;
     margin: 0;
   }
 }

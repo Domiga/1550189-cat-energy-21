@@ -6,7 +6,7 @@
   @media (min-width: $tablet-width) {
     background-color: $white;
     padding: 0;
-    margin: 17px 0 0 0;
+    margin: 17px 0 92px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -84,7 +84,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(to right, $grey 70%, $basic-grey 70% 100%);
+    background: linear-gradient(to right, $grey 72.5%, $basic-grey 72.5% 100%);
   }
 }
 

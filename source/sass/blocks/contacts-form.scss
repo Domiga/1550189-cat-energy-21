@@ -8,6 +8,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    margin: 67px 0 0 0;
   }
 }
 
@@ -21,21 +22,21 @@
   @media (min-width: $desktop-width) {
     position: relative;
     width: 570px;
-    padding-left: 40px;
+    padding: 0;
   }
 }
 
 .contacts-form__items {
   display: flex;
   flex-direction: column;
-  margin: 36px auto 24px auto;
+  margin: 34px auto 0 auto;
   padding: 0 20px;
   list-style: none;
   width: 280px;
 
   @media (min-width: $tablet-width) {
     margin: 76px auto 24px auto;
-    padding: 0 66px;
+    padding: 0 0 0 5px;
     width: 635px;
   }
 
@@ -83,7 +84,7 @@
     content: "";
     position: absolute;
     left: 0;
-    top: 40px;
+    top: 16px;
     height: 2px;
     width: 100%;
     background: $green;
@@ -121,8 +122,8 @@
 .contacts-form__title-wrap {
   position: relative;
   width: 202px;
-  margin: 0 auto 0 calc(50% - 160px);
-  padding: 0 15px 0 20px;
+  margin: 0 auto 0 calc(50% - 176px);
+  padding: 0 0 0 35px;
 
   @media (min-width: $tablet-width) {
     width: 512px;
@@ -199,8 +200,8 @@
 
 .contacts-form__entry--email {
   position: relative;
-  margin-left: 4px;
-  padding: 12px 0 13px 15px;
+  margin-left: 7px;
+  padding: 13px 0 13px 15px;
   width: 202px;
 
   &:focus:active {
@@ -218,9 +219,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: 17px;
-    padding: 10px 6px 10px 15px;
-    width: 528px;
+    margin-left: 16px;
+    padding: 10px 14px 10px 20px;
+    width: 516px;
 
     &:focus:active {
       margin-left: 17px;
@@ -260,8 +261,8 @@
   stroke: $black-light;
   outline: 0;
   border: none;
-  top: 15px;
-  right: 13px;
+  top: 17px;
+  right: 15px;
   width: 19px;
   height: 14px;
 
@@ -285,7 +286,7 @@
 }
 
 .contacts-form__entry--phone {
-  margin-left: 3px;
+  margin-left: 5px;
   padding: 12px 0 13px 15px;
   width: 187px;
 
@@ -306,9 +307,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: 12px;
-    padding: 9px 10px 11px 15px;
-    width: 508px;
+    margin-left: 10px;
+    padding: 9px 16px 11px 20px;
+    width: 497px;
 
     &:focus:active {
       margin-left: 12px;
@@ -325,8 +326,8 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 10px;
-    padding: 9px 7px 11px 19px;
-    width: 444px;
+    padding: 9px 7px 11px 17px;
+    width: 446px;
 
     &:focus:active {
       margin-left: 10px;
@@ -380,7 +381,7 @@
 }
 
 .contacts-form__item:not(:last-child) {
-  margin-bottom: 13px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;

@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>HTML Academy: Кэт энерджи</title>
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style.min.css" />
     </head>
     <body class="page__body">
         <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
@@ -75,24 +75,6 @@
                 </div>
             </nav>
         </header>
-
-        <script>
-            var navMain = document.querySelector(".main-navigation");
-            var navToggle = document.querySelector(".main-navigation__toggle");
-
-            navMain.classList.remove("main-navigation--nojs");
-
-            navToggle.addEventListener("click", function () {
-                if (navMain.classList.contains("main-navigation--closed")) {
-                    navMain.classList.remove("main-navigation--closed");
-                    navMain.classList.add("main-navigation--opened");
-                } else {
-                    navMain.classList.add("main-navigation--closed");
-                    navMain.classList.remove("main-navigation--opened");
-                }
-            });
-        </script>
-
         <main class="page-main">
             <h1 class="visually-hidden">
                 Питание для котов
@@ -246,15 +228,17 @@
                 <div class="invitation-wrapper">
                     <div class="invitation">
                         <h2 class="invitation__title">
-                            приглашаем<br> к сотрудничеству<br> дилеров!
+                            приглашаем<br />
+                            к сотрудничеству<br />
+                            дилеров!
                         </h2>
                         <div class="invitation__address-wrapper">
-                          <p class="invitation__address">
-                            ул. Большая Конюшенная, д. 19/8
-                        </p>
-                        <p class="invitation__city">
-                            Санкт-Петербург
-                        </p>
+                            <p class="invitation__address">
+                                ул. Большая Конюшенная, д. 19/8
+                            </p>
+                            <p class="invitation__city">
+                                Санкт-Петербург
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -264,6 +248,7 @@
                         Как до нас добраться
                     </h2>
                     <iframe
+                        class="map__img"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.4063378774833!2d30.329370056308434!3d59.937895630660215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310edbef855b%3A0xee3abe449bc142d7!2z0JzQuNGF0LDQudC70L7QstGB0LrQuNC5INGC0LXQsNGC0YA!5e0!3m2!1sru!2sru!4v1605283474130!5m2!1sru!2sru"
                         width="100"
                         height="362"
@@ -315,5 +300,7 @@
                 </div>
             </div>
         </footer>
+        <script src="js/script.js"></script>
     </body>
 </html>
+
