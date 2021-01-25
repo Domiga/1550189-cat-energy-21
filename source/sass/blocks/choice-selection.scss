@@ -1,19 +1,23 @@
 .choice-selection__indication {
+  position: relative;
   color: $black-light;
   font-size: 16px;
   line-height: 18px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
+  padding-left: 5px;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     width: 83%;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    position: relative;
+    padding: 0 0 0 50px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -21,29 +25,49 @@
 
 .choice-selection__list {
   list-style: none;
-  margin: 22px 0 18px 0;
+  margin: 22px auto 20px auto;
+  width: 280px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     border-top: none;
     border-bottom: none;
     border: 1px solid $grey-border-bottom;
-    padding: 35px 0 43px 88px;
-    margin: 49px 0 75px 0;
-    width: 86%;
+    padding: 26px 0 28px 43px;
+    margin: 49px 0 48px 0;
+    width: 586px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 30px 0 30px 0;
+    padding: 25px 0 28px 0;
     width: 570px;
-    margin: 122px 0 0 0;
+    margin: 125px 0 0 0;
   }
 }
 
 .choice-selection__item:not(:last-child) {
-  margin-bottom: 13px;
+  margin-bottom: 19px;
+  margin-top: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+    margin-top: 4px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 23px;
+  }
+}
+
+.choice-selection__item {
+  padding-left: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
   }
 }
 
@@ -52,14 +76,147 @@
   flex-direction: column;
   border-top: 1px solid $grey-border-bottom;
   border-bottom: 1px solid $grey-border-bottom;
-  padding: 0 20px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     padding: 0 70px;
     border: none;
+    width: 628px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    width: 570px;
+  }
+}
+
+.choice-selection__check-box {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -4px;
+  left: -40px;
+  background-image: url("../img/radiobutton-indication-mobile.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: -6px;
+    left: -55px;
+    background-image: url("../img/radiobutton-indication.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 40px;
+    height: 40px;
+    top: -4px;
+    left: -10px;
+    background-image: url("../img/radiobutton-indication.svg");
+  }
+}
+
+.choice-selection__entry:checked + .choice-selection__check-box {
+  background-image: url("../img/radiobutton-indication-mobile-checked.svg");
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/radiobutton-indication-checked.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/radiobutton-indication-checked.svg");
+  }
+}
+
+.choice-selection__entry:focus + .choice-selection__check-box {
+  outline: 2px solid $green;
+
+  @media (min-width: $tablet-width) {
+    outline: 2px solid $green;
+  }
+
+  @media (min-width: $desktop-width) {
+    outline: 2px solid $green;
+  }
+}
+
+.choice-selection__entry:checked:focus + .choice-selection__check-box {
+  background-image: url("../img/radiobutton-indication-mobile-checked.svg");
+  outline: 2px solid $green;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/radiobutton-indication-checked.svg");
+    outline: 2px solid $green;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/radiobutton-indication-checked.svg");
+    outline: 2px solid $green;
+  }
+}
+
+.choice-selection__entry:disabled + .choice-selection__check-box {
+  width: 28px;
+  height: 28px;
+  border: 1px solid $grey-scale;
+  border-radius: 50%;
+  background-image: none;
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/radiobutton-disabled.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/radiobutton-disabled.svg");
+  }
+}
+
+.choice-selection__entry:checked:disabled + .choice-selection__check-box {
+  width: 28px;
+  height: 28px;
+  border: 1px solid $grey-scale;
+  border-radius: 50%;
+  background-image: none;
+  opacity: 0.3;
+
+  &::after {
+    content: "";
+    top: 7px;
+    left: 7px;
+    position: absolute;
+    width: 14px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $green;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    border: none;
+    opacity: 1;
+    background-image: url("../img/radiobutton-disabled-checked.svg");
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 40px;
+    height: 40px;
+    border: none;
+    opacity: 1;
+    background-image: url("../img/radiobutton-disabled-checked.svg");
+
+    &::after {
+      display: none;
+    }
   }
 }

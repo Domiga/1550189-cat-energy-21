@@ -1,35 +1,121 @@
 .comment {
-  padding: 0 20px;
+  padding: 0;
   margin: 24px 0 0 0;
 
   @media (min-width: $tablet-width) {
-    padding: 0 70px;
+    padding: 0;
+    margin: 42px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    width: 1220px;
-    margin: 0 auto;
+    margin: -21px 0 0 0;
   }
 }
 
 .comment__title {
+  position: relative;
   color: $black;
   font-size: 24px;
   line-height: 26px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
+  width: 143px;
+  background-color: $white;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
     font-size: 36px;
     line-height: 36px;
+    background-color: $white;
+    z-index: 2;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
     font-size: 36px;
     line-height: 36px;
+    background-color: $white;
+    z-index: 2;
+  }
+}
+
+.comment__title-wrapper {
+  position: relative;
+  padding: 0;
+  width: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 15px;
+    height: 2px;
+    width: 100%;
+    background: $green;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 22px;
+      height: 2px;
+      width: 100%;
+      background: $green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 22px;
+      height: 2px;
+      width: 100%;
+      background: $green;
+    }
+  }
+}
+
+.comment__title-wrap {
+  position: relative;
+  width: 121px;
+  padding: 0 22px 0 20px;
+  margin: 0 auto 0 calc(50% - 160px);
+
+  @media (min-width: $tablet-width) {
+    width: 182px;
+    padding: 0 38px 0 37px;
+    margin: 0 auto 0 calc(50% - 352px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 182px;
+    padding: 0 40px 0 40px;
+    margin: 0 auto 0 calc(50% - 652px);
+  }
+}
+
+.comment__indication-wrapper {
+  padding: 0 20px;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 68px;
+    width: 631px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    margin: 37px auto 0 auto;
+    width: 1220px;
   }
 }
 
@@ -45,6 +131,7 @@
   outline: 0;
   border: 1px solid $grey-border-light;
   margin: 38px 0 0 0;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

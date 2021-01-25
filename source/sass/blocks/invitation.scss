@@ -2,35 +2,73 @@
   display: flex;
   flex-direction: row;
   background-color: $white;
-  padding: 0 20px;
-  margin: 28px 0 22px 0;
+  padding: 30px 20px 24px 20px;
+  margin: 0 auto;
   justify-content: space-between;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
-    padding: 62px 72px 58px 71px;
-    margin: 0;
+    background-color: $white;
+    padding: 69px 71px 57px 71px;
+    margin: 0 auto;
+    width: 625px;
   }
 
   @media (min-width: $desktop-width) {
+    background-color: $white;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     position: absolute;
-    left: 110px;
+    left: 0;
     top: 95px;
     margin: 0 auto;
-    min-width: 570px;
-    min-height: 201px;
+    width: 570px;
+    height: 201px;
     padding: 0;
+  }
+}
+
+.invitation-wrapper--grey {
+  background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
   }
 }
 
 .invitation--grey {
   background-color: $grey;
 
+  @media (min-width: $tablet-width) {
+    background-color: $grey;
+  }
+
   @media (min-width: $desktop-width) {
     background-color: $white;
+  }
+}
+
+.invitation-wrapper {
+  margin: 0 auto;
+  background-color: $white;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+    width: 1220px;
+    position: relative;
+    margin: 0 auto;
   }
 }
 
@@ -43,15 +81,35 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
+  width: 140px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
+    width: 171px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 21px;
+    width: 171px;
+    margin: 5px 0 0 34px;
+  }
+}
+
+.invitation__address-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 159px;
+    margin: -3px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 155px;
+    margin: 5px 49px 0 0;
   }
 }
 
@@ -68,10 +126,39 @@
     font-size: 16px;
     line-height: 20px;
     text-align: end;
+    width: 159px;
+    margin: -2px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
+    text-align: left;
     font-size: 16px;
     line-height: 20px;
+    width: 155px;
+  }
+}
+
+.invitation__city {
+  text-align: left;
+  color: $special-grey;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+    width: 159px;
+    margin: 19px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+    width: 155px;
   }
 }

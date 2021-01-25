@@ -11,7 +11,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    margin: 0;
+    margin: 0 0 0 -2px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,7 +20,7 @@
   }
 }
 
-.goods p {
+.goods__quantity {
   color: $special-grey;
   font-size: 14px;
   line-height: 14px;
@@ -31,10 +31,53 @@
 
   @media (min-width: $tablet-width) {
     margin: auto 0;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 1px 0 0 1px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.goods__quantity--margin {
+  @media (min-width: $tablet-width) {
+    margin: 0 9px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 9px 0 0;
+  }
+}
+
+.goods__price {
+  color: $special-grey;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  margin: 0 0 15px 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
     margin: auto 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 1px 5px 0 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.goods__price--margin {
+  @media (min-width: $desktop-width) {
+    margin: 1px 14px 0 0;
   }
 }
 
@@ -45,14 +88,17 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    margin-bottom: 24px;
+    padding: 26px 40px 20px 40px;
+    margin: 0 0 3px 0;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 36px;
     line-height: 36px;
     justify-content: space-between;
-    width: 63%;
+    width: 612px;
+    padding: 0;
+    margin: 9px 0 0 3px;
   }
 }
 
@@ -63,12 +109,13 @@
 
   @media (min-width: $tablet-width) {
     gap: 49px;
+    margin: 3px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 36px;
     line-height: 36px;
-    width: 43%;
+    width: 291px;
   }
 }
 
@@ -82,22 +129,31 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   background-color: $green;
-  padding: 8px 110px;
-  margin-bottom: 18px;
+  padding: 10px 110px;
+  margin-bottom: 17px;
+
+  &:hover {
+    background-color: $green-hover;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $green-hover;
+    color: $white-speshial;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
-    width: 632px;
-    padding: 9px 0;
-    margin: 0 auto;
+    padding: 9px 285px;
+    margin: 0 auto 25px auto;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 20px;
     width: 244px;
-    padding: 9px 0;
-    margin: 0;
+    padding: 10px 0;
+    margin: 0 2px 0 0;
   }
 }

@@ -3,50 +3,51 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    padding: 0;
+    margin: 164px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    margin: 0 auto;
-    padding: 0;
+    margin: 0 auto 0 auto;
+    padding: 0 110px;
   }
 }
 
 .catalog__item {
-  padding: 19px 20px 24px 20px;
-  margin: 0;
+  padding: 0;
+  margin: 0 0 47px 0;
+  height: 161px;
   border-top: 1px solid $grey-catalog-border;
 
   &:last-child {
-    border-bottom: 1px solid $grey-catalog-border;
     text-align: center;
+    margin: 0 0 29px 0;
+    padding: 0 0 1px 0;
 
     @media (min-width: $tablet-width) {
       border-top: none;
       border-bottom: none;
-      width: 46%;
-      padding: 0 0 40px 0;
+      width: 324px;
+      height: 430px;
+      padding: 0;
       display: flex;
       flex-direction: row;
       align-items: flex-end;
       background-color: $white;
     }
-
-    @media (min-width: $desktop-width) {
-      border-bottom: none;
-    }
   }
 
   @media (min-width: $tablet-width) {
     border-top: none;
-    width: 46%;
-    min-height: 391px;
-    padding: 0 0 40px 0;
+    width: 324px;
+    height: 430px;
+    padding: 0;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     background-color: $grey;
+    margin: 0 0 141px 0;
 
     &:last-child {
       border: 2px solid $grey;
@@ -57,13 +58,14 @@
 
   @media (min-width: $desktop-width) {
     border-top: none;
-    width: 20%;
-    min-height: 391px;
-    padding: 0 0 40px 0;
+    width: 245px;
+    height: 431px;
+    padding: 0;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: baseline;
     background-color: $grey;
+    margin: 63px 0 0 0;
 
     &:last-child {
       width: 20%;
@@ -71,7 +73,7 @@
       border: 2px solid $grey;
       box-sizing: border-box;
       text-align: center;
-      margin: 0;
+      margin: 64px 0 0 0;
     }
   }
 }
@@ -80,7 +82,6 @@
   display: flex;
   flex-direction: column;
   list-style: none;
-  margin: 0;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -88,8 +89,9 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0;
-    gap: 56px;
+    padding: 0 30px;
+    width: 708px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -97,6 +99,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
-    gap: 81px;
+    gap: 80px;
+    width: 1220px;
+    margin: 102px 0 0 0;
   }
 }
