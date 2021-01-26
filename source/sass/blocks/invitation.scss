@@ -30,18 +30,6 @@
   }
 }
 
-.invitation-wrapper--grey {
-  background-color: $grey;
-
-  @media (min-width: $tablet-width) {
-    background-color: $grey;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-color: $white;
-  }
-}
-
 .invitation--grey {
   background-color: $grey;
 
@@ -69,6 +57,18 @@
     width: 1220px;
     position: relative;
     margin: 0 auto;
+  }
+}
+
+.invitation-wrapper--grey {
+  background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
   }
 }
 

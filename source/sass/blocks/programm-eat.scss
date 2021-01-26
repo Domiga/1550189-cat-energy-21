@@ -260,6 +260,18 @@
     }
   }
 
+  &:active:focus {
+    &::after {
+      content: "";
+      top: 5px;
+      left: 101px;
+      position: absolute;
+      background-image: url("../img/arrow-hover.svg");
+      width: 32px;
+      height: 12px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     &::after {
       content: "";
@@ -268,6 +280,18 @@
     }
 
     &:hover {
+      &::after {
+        content: "";
+        top: 9px;
+        left: 185px;
+        position: absolute;
+        background-image: url("../img/arrow-hover.svg");
+        width: 32px;
+        height: 12px;
+      }
+    }
+
+    &:active:focus {
       &::after {
         content: "";
         top: 9px;
@@ -298,6 +322,18 @@
         height: 12px;
       }
     }
+
+    &:active:focus {
+      &::after {
+        content: "";
+        top: 10px;
+        left: 136px;
+        position: absolute;
+        background-image: url("../img/arrow-hover.svg");
+        width: 32px;
+        height: 12px;
+      }
+    }
   }
 }
 
@@ -315,8 +351,20 @@
   &:hover {
     &::after {
       content: "";
-      top: 3px;
-      left: 106px;
+      top: 5px;
+      left: 99px;
+      position: absolute;
+      background-image: url("../img/arrow-hover.svg");
+      width: 32px;
+      height: 12px;
+    }
+  }
+
+  &:active:focus {
+    &::after {
+      content: "";
+      top: 5px;
+      left: 99px;
       position: absolute;
       background-image: url("../img/arrow-hover.svg");
       width: 32px;
@@ -342,6 +390,18 @@
         height: 12px;
       }
     }
+
+    &:active:focus {
+      &::after {
+        content: "";
+        top: 9px;
+        left: 181px;
+        position: absolute;
+        background-image: url("../img/arrow-hover.svg");
+        width: 32px;
+        height: 12px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -352,6 +412,18 @@
     }
 
     &:hover {
+      &::after {
+        content: "";
+        top: 10px;
+        left: 131px;
+        position: absolute;
+        background-image: url("../img/arrow-hover.svg");
+        width: 32px;
+        height: 12px;
+      }
+    }
+
+    &:active:focus {
       &::after {
         content: "";
         top: 10px;
