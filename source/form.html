@@ -4,6 +4,8 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>HTML Academy: Кэт энерджи</title>
+        <link rel="preload" href="fonts/oswaldregular.woff2" as="font" />
+        <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" />
         <link rel="stylesheet" href="css/style.min.css" />
     </head>
     <body class="page__body">
@@ -92,21 +94,21 @@
                         </legend>
                         <ul class="cat-information__list">
                             <li class="cat-information__item">
-                                <label class="cat-information__indication">
+                                <label class="cat-information__indication" for="name">
                                     ИМЯ:*
-                                    <input class="cat-information__entry cat-information__entry--name" type="text" name="Имя" placeholder="Барсик" />
+                                    <input class="cat-information__entry cat-information__entry--name" id="name" type="text" name="Имя" placeholder="Барсик" />
                                 </label>
                             </li>
                             <li class="cat-information__item">
-                                <label class="cat-information__indication">
+                                <label class="cat-information__indication" for="weight">
                                     Вес (кг):*
-                                    <input class="cat-information__entry cat-information__entry--weight" type="text" name="Вес" placeholder="7" />
+                                    <input class="cat-information__entry cat-information__entry--weight" id="weight" type="text" name="Вес" placeholder="7" />
                                 </label>
                             </li>
                             <li class="cat-information__item">
-                                <label class="cat-information__indication">
+                                <label class="cat-information__indication" for="age">
                                     Возраст (лет):
-                                    <input class="cat-information__entry cat-information__entry--age" type="text" name="Возраст" placeholder="7" />
+                                    <input class="cat-information__entry cat-information__entry--age" id="age" type="text" name="Возраст" placeholder="7" />
                                 </label>
                             </li>
                         </ul>
@@ -116,23 +118,23 @@
                         <legend class="choice-selection__title visually-hidden">Выбор программы</legend>
                         <ul class="choice-selection__list">
                             <li class="choice-selection__item">
-                                <label class="choice-selection__indication">
+                                <label class="choice-selection__indication" for="slim">
                                     похудение
-                                    <input class="choice-selection__entry visually-hidden" type="radio" name="Программа" checked />
+                                    <input class="choice-selection__entry visually-hidden" id="slim" type="radio" name="Программа" checked />
                                     <span class="choice-selection__check-box choice-selection__check-box--checked"></span>
                                 </label>
                             </li>
                             <li class="choice-selection__item">
-                                <label class="choice-selection__indication">
+                                <label class="choice-selection__indication" for="mass">
                                     Набор массы
-                                    <input class="choice-selection__entry visually-hidden" type="radio" name="Программа" />
+                                    <input class="choice-selection__entry visually-hidden" id="mass" type="radio" name="Программа" />
                                     <span class="choice-selection__check-box"></span>
                                 </label>
                             </li>
                             <li class="choice-selection__item">
-                                <label class="choice-selection__indication">
+                                <label class="choice-selection__indication" for="advice">
                                     Не знаю (Нужен ваш совет)
-                                    <input class="choice-selection__entry visually-hidden" type="radio" name="Программа" />
+                                    <input class="choice-selection__entry visually-hidden" id="advice" type="radio" name="Программа" />
                                     <span class="choice-selection__check-box"></span>
                                 </label>
                             </li>
@@ -148,18 +150,18 @@
                     </legend>
                     <ul class="contacts-form__items">
                         <li class="contacts-form__item">
-                            <label class="contacts-form__indication">
+                            <label class="contacts-form__indication" for="email">
                                 E-mail:*
-                                <input class="contacts-form__entry contacts-form__entry--email" type="text" name="e-mail" placeholder="кuklachev@gmail.com" />
+                                <input class="contacts-form__entry contacts-form__entry--email" id="email" type="text" name="e-mail" placeholder="кuklachev@gmail.com" />
                                 <svg class="contacts-form__icon-mail" width="19" height="14">
                                     <use xlink:href="#icon-mail"></use>
                                 </svg>
                             </label>
                         </li>
                         <li class="contacts-form__item">
-                            <label class="contacts-form__indication">
+                            <label class="contacts-form__indication" for="phone">
                                 Телефон:*
-                                <input class="contacts-form__entry contacts-form__entry--phone" type="text" name="phone" placeholder="8 (960) 900-60-90" />
+                                <input class="contacts-form__entry contacts-form__entry--phone" id="phone" type="text" name="phone" placeholder="8 (960) 900-60-90" />
                                 <svg class="contacts-form__icon-phone" width="20" height="21">
                                     <use xlink:href="#icon-phone"></use>
                                 </svg>
@@ -191,30 +193,30 @@
                     <div class="additionally__wrapper-content">
                         <ul class="additionally__list">
                             <li class="additionally__item">
-                                <label class="additionally__indication">
+                                <label class="additionally__indication" for="sweetener">
                                     сахарозаменитель
-                                    <input class="additionally__entry visually-hidden" type="checkbox" name="Сахарозаменитель" checked />
+                                    <input class="additionally__entry visually-hidden" id="sweetener" type="checkbox" name="Сахарозаменитель" checked />
                                     <span class="additionally__check-box"></span>
                                 </label>
                             </li>
                             <li class="additionally__item">
-                                <label class="additionally__indication">
+                                <label class="additionally__indication" for="water">
                                     питьевая вода
-                                    <input class="additionally__entry visually-hidden" type="checkbox" name="Вода" />
+                                    <input class="additionally__entry visually-hidden" id="water" type="checkbox" name="Вода" />
                                     <span class="additionally__check-box"></span>
                                 </label>
                             </li>
                             <li class="additionally__item">
-                                <label class="additionally__indication">
+                                <label class="additionally__indication" for="milk">
                                     молоко
-                                    <input class="additionally__entry visually-hidden" type="checkbox" name="Молоко" />
+                                    <input class="additionally__entry visually-hidden" id="milk" type="checkbox" name="Молоко" />
                                     <span class="additionally__check-box"></span>
                                 </label>
                             </li>
                             <li class="additionally__item">
-                                <label class="additionally__indication">
+                                <label class="additionally__indication" for="vitamins">
                                     витамины
-                                    <input class="additionally__entry visually-hidden" type="checkbox" name="Витамины" />
+                                    <input class="additionally__entry visually-hidden" id="vitamins" type="checkbox" name="Витамины" />
                                     <span class="additionally__check-box"></span>
                                 </label>
                             </li>
@@ -310,4 +312,3 @@
         <script src="js/script.min.js"></script>
     </body>
 </html>
-

@@ -21,18 +21,8 @@
   }
 }
 
-.product__link-img--max-padding {
-  text-decoration: none;
-  margin-top: auto;
-  padding: 0;
-  text-align: center;
-}
-
-.product__link-img--min-padding {
-  text-decoration: none;
-  margin-top: auto;
-  padding: 0;
-  text-align: center;
+.product__link-img img {
+  background-color: transparent;
 }
 
 .product__title-link {

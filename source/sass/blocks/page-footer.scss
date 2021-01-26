@@ -2,10 +2,10 @@
   background-color: $grey;
 
   @media (min-width: $tablet-width) {
-    margin: 76px 0 0 0;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 0 0;
+    margin: 0;
   }
 }

@@ -129,15 +129,17 @@
   }
 
   &:active:focus {
-    margin-left: 9px;
     border: 2px solid $special-grey;
-    padding: 12px 0 11px 12px;
+    width: 212px;
+    margin-left: 8px;
+    padding: 11px 0 12px 14px;
   }
 
   &:invalid {
     border: 2px solid $pink-invalid;
-    padding: 12px 0 11px 12px;
-    margin-left: 9px;
+    width: 212px;
+    margin-left: 8px;
+    padding: 11px 0 12px 14px;
   }
 
   @media (min-width: $tablet-width) {
@@ -146,15 +148,17 @@
     width: 539px;
 
     &:active:focus {
-      margin-left: 11px;
       border: 2px solid $special-grey;
-      padding: 8px 0 10px 12px;
+      margin-left: 11px;
+      padding: 8px 0 10px 18px;
+      width: 544px;
     }
 
     &:invalid {
       border: 2px solid $pink-invalid;
-      padding: 8px 0 10px 12px;
       margin-left: 11px;
+      padding: 8px 0 10px 18px;
+      width: 544px;
     }
   }
 
@@ -166,16 +170,17 @@
     width: 485px;
 
     &:active:focus {
-      margin-left: 12px;
       border: 2px solid $special-grey;
-      padding: 8px 0 10px 12px;
-      width: 490px;
+      margin-left: 13px;
+      padding: 9px 0 9px 17px;
+      width: 484px;
     }
 
     &:invalid {
       border: 2px solid $pink-invalid;
-      padding: 8px 5px 10px 12px;
-      margin-left: 12px;
+      margin-left: 13px;
+      padding: 9px 0 9px 17px;
+      width: 484px;
     }
   }
 }
@@ -188,18 +193,23 @@
 
   &:hover {
     border: 1px solid $grey-border;
+    width: 188px;
+    padding: 12px 0 13px 14px;
+    margin-left: 12px;
   }
 
   &:active:focus {
-    margin-left: 9px;
     border: 2px solid $special-grey;
-    padding: 12px 0 11px 12px;
+    width: 187px;
+    padding: 11px 0 12px 13px;
+    margin-left: 12px;
   }
 
   &:invalid {
     border: 2px solid $pink-invalid;
-    padding: 12px 0 11px 12px;
-    margin-left: 11px;
+    width: 187px;
+    padding: 11px 0 12px 13px;
+    margin-left: 12px;
   }
 
   @media (min-width: $tablet-width) {
@@ -207,36 +217,54 @@
     margin-left: 14px;
     width: 511px;
 
-    &:active:focus {
+    &:hover {
+      border: 1px solid $grey-border;
+      padding: 9px 4px 11px 18px;
       margin-left: 14px;
+      width: 511px;
+    }
+
+    &:active:focus {
       border: 2px solid $special-grey;
-      padding: 8px 0 10px 16px;
+      margin-left: 14px;
+      padding: 8px 0 10px 17px;
+      width: 514px;
     }
 
     &:invalid {
       border: 2px solid $pink-invalid;
-      padding: 8px 0 10px 16px;
       margin-left: 14px;
+      padding: 8px 0 10px 17px;
+      width: 514px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 1px 10px 19px;
     font-size: 20px;
     line-height: 30px;
+    padding: 10px 1px 10px 19px;
     margin-left: 15px;
     width: 453px;
 
-    &:active:focus {
+    &:hover {
+      border: 1px solid $grey-border;
+      padding: 10px 1px 10px 19px;
       margin-left: 15px;
+      width: 453px;
+    }
+
+    &:active:focus {
       border: 2px solid $special-grey;
-      padding: 8px 2px 10px 16px;
+      padding: 9px 1px 9px 18px;
+      margin-left: 15px;
+      width: 452px;
     }
 
     &:invalid {
       border: 2px solid $pink-invalid;
-      padding: 8px 2px 10px 16px;
+      padding: 9px 1px 9px 18px;
       margin-left: 15px;
+      width: 452px;
     }
   }
 }
@@ -252,15 +280,16 @@
   }
 
   &:active:focus {
-    margin-left: 9px;
+    padding: 12px 0 11px 13px;
+    margin-left: 11px;
+    width: 155px;
     border: 2px solid $special-grey;
-    padding: 12px 0 11px 12px;
   }
 
   &:invalid {
     border: 2px solid $pink-invalid;
-    padding: 12px 0 11px 10px;
-    margin-left: 11px;
+    margin-left: 10px;
+    padding: 12px 0 11px 12px;
   }
 
   @media (min-width: $tablet-width) {
@@ -269,15 +298,17 @@
     width: 470px;
 
     &:active:focus {
-      margin-left: 14px;
       border: 2px solid $special-grey;
+      margin-left: 13px;
       padding: 8px 0 10px 16px;
+      width: 475px;
     }
 
     &:invalid {
       border: 2px solid $pink-invalid;
-      padding: 8px 2px 10px 16px;
-      margin-left: 12px;
+      margin-left: 13px;
+      padding: 8px 0 10px 16px;
+      width: 475px;
     }
   }
 
@@ -288,16 +319,22 @@
     margin-left: 13px;
     width: 413px;
 
+    &:hover {
+      border: 1px solid $grey-border;
+    }
+
     &:active:focus {
-      margin-left: 13px;
       border: 2px solid $special-grey;
-      padding: 8px 6px 10px 16px;
+      margin-left: 13px;
+      padding: 9px 6px 9px 15px;
+      width: 411px;
     }
 
     &:invalid {
       border: 2px solid $pink-invalid;
-      padding: 8px 6px 10px 16px;
       margin-left: 13px;
+      padding: 9px 6px 9px 15px;
+      width: 411px;
     }
   }
 }

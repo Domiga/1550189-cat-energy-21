@@ -32,13 +32,14 @@
   flex-direction: column;
   position: relative;
   align-items: center;
-  background-color: $green;
+  background-color: $green-light;
   background-image: url("../img/background-img-mobile.jpg");
+  width: 320px;
   background-repeat: no-repeat;
   background-position: 50% -1px;
   height: 302px;
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/background-img-mobile@2x.jpg");
     background-size: 320px auto;
   }
